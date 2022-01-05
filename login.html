@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/Login.css">
+	<script type="text/javascript" src="assets/js/login.js"></script>
+	
+</head>
+<body>
+	<div class="volver"><a href="index.html"><img src="img/globo.ico"></a></div>
+	<div class="login">
+	<img class="avatar" src="img/nasa.png" alt="logo de naz">
+	<h1>Login here</h1>
+		<form name="Login">
+			<!--unarname.-->
+			<label for="username">Username</label>
+			<input name="usuario" type="text" id="usuario" placeholder="Enter Username" >
+			
+			<!--contraseña pa.-->
+			<label for="password">Password</label>
+			<input  name="contraseña" type="password" id="contraseña"  placeholder="Escribe password">
+			<!-- BTN -->
+			<input  onclick="login()" type="submit" value="Ingresar">
+			<a href="#">Olvidaste tu contraseña?</a><br>
+			<a href="#">Create nueva cuenta</a>
+		</form> 
+	</div>
+</body>
+</html>
