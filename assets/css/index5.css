@@ -1,0 +1,68 @@
+/* inecesario
+p.title{
+	margin-left: 0px;
+	font-size: 40px;
+}
+/*/
+a{
+	color: rgb(200,200,200);
+	text-decoration: none;
+}
+p.sub{
+	margin-left: 50px;
+	font-size: 30px;
+	color: rgb(200,200,200);
+}
+body{
+	background:rgb(70,70,70);
+}
+h5{
+	margin: auto;
+	align-items: center;
+	text-align: center;
+
+	opacity: 70%;
+}
+div .div1{
+	width: auto;
+	height: fit-content;
+	margin: 0px 0px 0px 107px;
+
+
+}
+p img.volver{
+	width: 50px;
+	height: 54px;
+	margin-left: 40px;
+	margin-right: 30px;
+	transition-duration: 0.5s;
+}
+p img.volver:hover{
+	
+	transform: rotate(200deg);
+}
+div.contenido{
+	display: inline-flex;
+	margin:14px;
+	padding: 10px 30px 19px;
+	padding-right: 90px;
+	height: 40px;
+	background:rgb(50,50,50);
+	border-radius: 9px;
+	color:rgb(180,180,180);
+}
+div.contenido:hover{
+	color: rgb(255,255,255);
+}
+p{
+	margin-left: 10px;
+	text-decoration: none;
+	align-self: center;
+}
+div.div2{
+	display: block;
+	text-align: center;
+	font-size: 13px;
+
+	height: fit-content;
+}

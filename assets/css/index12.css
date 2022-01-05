@@ -1,0 +1,278 @@
+@font-face{
+	font-family:fuente10;
+	src:url(../../fonts/fuente17.ttf);
+}
+.loader1{
+  background-color: rgb(40,40,40);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  position:fixed;
+  opacity: 100%;
+  top: 0;
+  left: 0;
+  transition:1s ease-in-out;
+  clip-path: circle(110.9% at 48% 0);
+}
+.loader2{
+clip-path: circle(0% at 100% 0);
+opacity: 0%;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: animloader 2s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  width: 6px;
+  height: 24px;
+  background: #FFF;
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: -20px;
+  left: 46px;
+}
+
+@keyframes animloader {
+  0% {
+    transform: translate(-10px, -10px);
+  }
+  25% {
+    transform: translate(-10px, 10px);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  75% {
+    transform: translate(10px, -10px);
+  }
+  100% {
+    transform: translate(-10px, -10px);
+  }
+}
+
+html,p,a,div{
+	font-family:fuente10;
+}
+body{
+	/*background:url(../../images/abs5.jpg);*/
+	background:linear-gradient(#28313B,#485461);
+	background-size: cover;
+	background-attachment: fixed;
+}
+nav{
+	position:relative;
+	display: inline-flex;
+/*	background-color: rgba(27,27,27,0.3);*/
+	justify-content: center;
+	width: 15%;
+	height: 100vh;
+}
+.logo{
+	position: relative;
+}
+.logo img{
+	width: 40px;
+	height: 40px;
+	flex-grow: wrap;
+	align-items: center;
+	justify-content:center;
+/*	left: 120px;*/
+	color:#ffff;
+	transition-duration: 0.5s; 
+}
+.logo img:hover{
+	width: 45px;
+	height: 45px;
+}
+div.texto{
+	font-family: fuente10;
+	opacity: 40%;
+	font-size: 17px;
+	position:absolute;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	top:100px;
+	color: #fff;
+}
+.texto div{
+	margin-top: 17px;
+}
+p.creditos{
+	font-size: 12px;
+position: absolute;
+top:690px;
+/*left: 100px;*/
+color: #aaa;
+text-transform: uppercase;
+}
+
+section{
+float: right;
+width: 79%;
+}
+div.section1{
+	position: relative;
+	display:inline-flex;
+	width: 100%;
+	top:0px;
+	left: 0px;
+	height: 100px;
+	color: #fff;
+}
+div.buscador{
+	position: relative;
+	width: 38px;
+	height: 58px;
+	left: 80px;
+	top:30px; 
+}
+.buscador input{
+	position: absolute;
+width: 0px;
+height: 37px;
+top: 0;
+padding: 0 18px;
+font-size: 16px;
+color: #000;
+outline: none;
+border: 1px solid silver;
+border-radius: 30px;
+transition: all 0.6s ease;
+}
+/*lupa en lenguaje java*/
+.lupa{
+position: absolute;
+width: 37px;
+top: 0;
+height: 0;
+background-image: url(../../images/lupa.jpg);
+background-size: contain;
+height: 37px;
+line-height: 37px;
+text-align: center;
+border: 1px solid silver;
+color: white;
+font-size: 20px;
+border-radius: 50%;
+cursor: pointer;
+}
+.lup{
+	width: 10px;
+	height: 10px;
+}
+
+
+.buscador:hover input{
+		width: 250px;
+}
+.buscador input:focus{
+	width: 240px;
+}
+div.ordenador{
+	position: absolute;
+	top: 28px;
+/*	border: 1px  solid #fff;*/
+	width: 0px;
+	height: 35px;
+	left: 30px;
+}
+.ordenador div{
+	opacity: 70%;
+	width: 20px;
+	height:1px;
+	margin: 6px;
+	background-color: white;
+	border: 1px solid #fff;
+}
+.ordenador div:nth-child(1){
+	width: 20px;
+}
+.ordenador div:nth-child(2){
+	width: 15px;
+}
+.ordenador div:nth-child(3){
+	width: 9px;
+}
+
+.ordenador div:nth-child(4){
+	width: 5px;
+}
+
+
+div.section2{
+	margin-top: 40px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	position: relative;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	color:#fff;
+	height: 85vh;
+}
+.section2 div{
+	display:block;
+	width: 330px;
+	height: 530px;
+	margin: 10px;
+/*	border: 1px solid #000;*/
+	text-align: center;
+	align-items: center;
+	/*align-content: center;*/
+	justify-content: center;
+	/*box-shadow: 10px 10px rgba(10,10,10,0.8);*/
+
+}
+div.contenedor{
+		background-color: rgba(35,35,35,0.9);
+		position: relative;
+		opacity: 80%;
+}
+div.contenedor:hover{
+	background-color: rgba(50,50,50,0.9);
+	opacity:100%;
+}
+.p1{
+font-size: 25px;
+position: absolute;
+left: 30px;
+top:20px;
+}
+.p2{
+position: absolute;
+top: 70px;
+left: 40px;
+text-align: justify-all;
+opacity: 70%;
+color: rgb(190,190,190);
+}
+
+div img{
+	width:330px;
+	height: 240px;
+	position:relative;
+	top:190px;
+	left: 25px;
+}
+div img.especial{
+	width:240px;
+	height: 290px;
+	position:relative;
+	top:190px;
+	left: 0px;
+}

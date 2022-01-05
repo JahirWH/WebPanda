@@ -1,0 +1,31 @@
+body{
+	background-color: rgb(10,10,10);
+	margin: 0;
+	padding:0;
+	justify-content: center;
+	text-align: center;
+}
+.container{
+position: relative;
+width: 70%;
+height: 90vh;
+background-color: rgb(20,20,20);
+margin: auto;
+margin-top: 50px; 
+border:1px solid white;
+
+}
+ul{
+	position: relative;
+	width: 100%;
+	display: flex;
+	color: #fff;
+	list-style-type: none;
+}
+li{
+	background-color: rgb(30,30,30);
+	margin: auto;
+	width: 30px;
+	height: 20px;
+
+}

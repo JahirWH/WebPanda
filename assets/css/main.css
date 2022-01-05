@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../../images/Fondo1.jpg);
+	background: linear-gradient(to  right, #360033,#0b8793);
+	flex-wrap: wrap;
+	font-family: sans-serif;
+}
+h2{
+	color: #fff;
+}
+h3{color: greenyellow;}
+a{
+	color: yellow;
+}
+ul{
+	list-style: none;
+	display: flex;
+  }
+  p{
+  	justify-content: center;
+  	text-align: justify;
+  }
+.topwords{
+color: #bbb;
+}
+
+#header{
+	position: relative;
+	width: 100%;
+	height: 14vh;
+	display: flex;
+	background: linear-gradient(to left, rgba(0,0,0,0.252), rgba(70,70,70,0.339) );
+	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.63);
+
+}
+.menu{
+	position: relative;
+	height: fit-content;
+	float: left;
+	margin-top: 15px;
+	margin-left: 30px;
+	margin-right: auto;
+	display: block;
+}
+.menu a {
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+
+}
+#header span{
+	padding: 5px;
+	position: relative;
+	display: block;
+	font-size: 15px;
+	opacity: 80%;
+	color: #ccc;
+}
+
+.align-center{
+
+	position: relative;
+	align-items: center;
+	text-align: left;
+	color: #ccc;
+	margin: 10px auto;
+	display: flex;	
+}
+.align-center img{
+ 	width: auto;
+ 	height: 60px;
+ 	margin: 10px;
+ }
+
+
+
+/*two*/
+
+
+#two{
+	width: 100%;
+		height: fit-content;
+	position: relative;
+	margin-top: 40px;
+}
+.box{
+
+}
+.content{
+	margin: 10px auto;
+		width: 80%;
+	text-align: justify;
+}
+
+p{
+	color: #bbb;
+}
+
+.paraf{
+	border-radius: 20px;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.430);
+}
+#footer{
+	width: 100%;
+	height: 15vh;
+	background-color: rgb(0,0,0,0.8);
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	
+}
+.container{
+
+
+}
+.icons{
+	list-style: none;
+		display: inline-flex;
+
+margin: 10px auto;
+}
+.icons li{
+
+	padding: 20px;
+}
+.icons li a{
+	color: #ccc;
+}
+.copyright{
+	color: #fff;
+}
+.links a{
+color: #aaa;
+margin: 10px;
+text-decoration: none;
+}
+.links a:hover{
+	text-decoration: underline;
+}
