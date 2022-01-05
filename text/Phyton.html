@@ -1,0 +1,880 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>python</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../assets/css/main.css"/>
+</head>
+<body class="subpage">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="menu"><a href="../index-2.html">Back loremd sdias</a>
+			<span>Esta web es de esto</span>
+		</div>
+		<div class="align-center">
+			<p>Noteepad</p><img src="../img/icon_sub1.png">
+		</div>
+	</header>
+
+	
+
+
+	<!-- Two -->
+	<section id="two" class="wrapper style2">
+		<div class="inner">
+			<div class="box">
+				<div class="content">
+					<header class="align-center">
+
+						<h2 id="genero1">Notepadd python</h2>
+					</header>
+					<section class="paraf">
+						<p><b>example correct<br>
+							some  = [3,7,12,16]<br>
+							7 in some<br>
+							True<br>
+							14 in some<br>
+							False<br>
+							20 not in some<br>
+							True<br>
+						</b></p>
+
+						<h3>add concatenating lists usings +</h3>
+						<p>a = [1,2,3]<br>
+							b= [4,5,6]<br>
+							c= a + b <br>
+							print(c)<br>
+							[1,2,3,4,5,6]
+							<br>
+							print(a)<br>
+							[1,2,3]<br>
+						</p>
+						<p>Proyects</p>
+						<p>print("Hello, World!")</p>
+						<p>Variables<br>
+						Variables are containers for storing data values.</p>
+
+						<p>Creating Variables<br>
+						Python has no command for declaring a variable.</p>
+
+						<p>A variable is created the moment you first assign a value to it.</p>
+
+						<p>Example<br>
+							x = 5<br>
+							y = &quot;John&quot;<br>
+							print(x)<br>
+						print(y)</p><br>
+						<p><b>for install pacets "pip install 'packet' for wacht 'pip list'</b></p>
+
+						<img src="img/5.jpg">
+
+						<p>Lists<br>
+						Lists are very similar to arrays. They can contain any type of variable, and they can contain as many variables as you wish. Lists can also be iterated over in a very simple manner. Here is an example of how to build a list.</p>
+						<p>mylist = []<br>
+							mylist.append(1)<br>
+							mylist.append(2)<br>
+							mylist.append(3)<br>
+							print(mylist[0]) # prints 1<br>
+							print(mylist[1]) # prints 2<br>
+						print(mylist[2]) # prints 3</p>
+
+						<p># prints out 1,2,3<br>
+							for x in mylist:<br>
+						print(x)</p>
+
+						<h3>More examples</h3>
+						<p>Python Lists<br>
+						Lists are the most versatile of Python's compound data types. A list contains items separated by commas and enclosed within square brackets ([]). To some extent, lists are similar to arrays in C. One difference between them is that all the items belonging to a list can be of different data type.</p>
+
+						<p>The values stored in a list can be accessed using the slice operator ([ ] and [:]) with indexes starting at 0 in the beginning of the list and working their way to end -1. The plus (+) sign is the list concatenation operator, and the asterisk (*) is the repetition operator. For example &#8722;</p>
+
+						<p>#!/usr/bin/python</p>
+
+						<p>list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]<br>
+						tinylist = [123, 'john']</p>
+
+						<p>print list # Prints complete list<br>
+							print list[0] # Prints first element of the list<br>
+							print list[1:3] # Prints elements starting from 2nd till 3rd <br>
+							print list[2:] # Prints elements starting from 3rd element<br>
+							print tinylist * 2 # Prints list two times<br>
+							print list + tinylist # Prints concatenated lists<br>
+						This produce the following result &#8722;</p>
+
+						<p>['abcd', 786, 2.23, 'john', 70.2]<br>
+							abcd<br>
+							[786, 2.23]<br>
+							[2.23, 'john', 70.2]<br>
+							[123, 'john', 123, 'john']<br>
+						['abcd', 786, 2.23, 'john', 70.2, 123, 'john']</p>
+						<img src="img/6.png">
+						<h3>Python Tuples<h3>
+						A tuple is another sequence data type that is similar to the list. A tuple consists of a number of values separated by commas. Unlike lists, however, tuples are enclosed within parentheses.</p>
+
+						<p>The main differences between lists and tuples are: Lists are enclosed in brackets ( [ ] ) and their elements and size can be changed, while tuples are enclosed in parentheses ( ( ) ) and cannot be updated. Tuples can be thought of as read-only lists. For example &#8722;</p>
+
+						<p>Live Demo<br>
+						#!/usr/bin/python</p>
+
+						<p>tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 )<br>
+						tinytuple = (123, 'john')</p>
+
+						<p>print tuple # Prints the complete tuple<br>
+							print tuple[0] # Prints first element of the tuple<br>
+							print tuple[1:3] # Prints elements of the tuple starting from 2nd till 3rd <br>
+							print tuple[2:] # Prints elements of the tuple starting from 3rd element<br>
+							print tinytuple * 2 # Prints the contents of the tuple twice<br>
+							print tuple + tinytuple # Prints concatenated tuples<br>
+						This produce the following result &#8722;</p>
+
+						<p>('abcd', 786, 2.23, 'john', 70.2)<br>
+							abcd<br>
+							(786, 2.23)<br>
+							(2.23, 'john', 70.2)<br>
+							(123, 'john', 123, 'john')<br>
+							('abcd', 786, 2.23, 'john', 70.2, 123, 'john')<br>
+						The following code is invalid with tuple, because we attempted to update a tuple, which is not allowed. Similar case is possible with lists &#8722;</p>
+
+						<p>#!/usr/bin/python</p>
+
+						<p>tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 )<br>
+							list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]<br>
+							tuple[2] = 1000 # Invalid syntax with tuple<br>
+						list[2] = 1000 # Valid syntax with list</p>
+						<img src="img/8.png">
+						<h3>Data Type Conversion<h3>
+						Sometimes, you may need to perform conversions between the built-in types. To convert between types, you simply use the type name as a function.</p>
+
+						<p>There are several built-in functions to perform conversion from one data type to another. These functions return a new object representing the converted value.</p>
+
+						<p>Sr.No. Function &amp; Description<br>
+							1 <br>
+						int(x [,base])</p>
+
+						<p>Converts x to an integer. base specifies the base if x is a string.</p>
+
+						<p>2 <br>
+						long(x [,base] )</p>
+
+						<p>Converts x to a long integer. base specifies the base if x is a string.</p>
+
+						<p>3 <br>
+						float(x)</p>
+
+						<p>Converts x to a floating-point number.</p>
+
+						<p>4 <br>
+						complex(real [,imag])</p>
+
+						<p>Creates a complex number.</p>
+
+						<p>5 <br>
+						str(x)</p>
+
+						<p>Converts object x to a string representation.</p>
+
+						<p>6 <br>
+						repr(x)</p>
+
+						<p>Converts object x to an expression string.</p>
+
+						<p>7 <br>
+						eval(str)</p>
+
+						<p>Evaluates a string and returns an object.</p>
+
+						<p>8 <br>
+						tuple(s)</p>
+
+						<p>Converts s to a tuple.</p>
+
+						<p>9 <br>
+						list(s)</p>
+
+						<p>Converts s to a list.</p>
+
+						<p>10 <br>
+						set(s)</p>
+
+						<p>Converts s to a set.</p>
+
+						<p>11 <br>
+						dict(d)</p>
+
+						<p>Creates a dictionary. d must be a sequence of (key,value) tuples.</p>
+
+						<p>12 <br>
+						frozenset(s)</p>
+
+						<p>Converts s to a frozen set.</p>
+
+						<p>13 <br>
+						chr(x)</p>
+
+						<p>Converts an integer to a character.</p>
+
+						<p>14 <br>
+						unichr(x)</p>
+
+						<p>Converts an integer to a Unicode character.</p>
+
+						<p>15 <br>
+						ord(x)</p>
+
+						<p>Converts a single character to its integer value.</p>
+
+						<p>16 <br>
+						hex(x)</p>
+
+						<p>Converts an integer to a hexadecimal string.</p>
+
+						<p>17 <br>
+						oct(x)</p>
+
+						<p>Converts an integer to an octal string.</p>
+						<img src="img/9.jpg">
+						<h3>examples from my proyects</h3>
+						<p>import csv<br>
+							import pandas as pd<br>
+							import seaborn as sb<br>
+						import matplotlib.pyplot as plt</p>
+
+						<p>def show():<br>
+							print(&quot;&#9608;&#9608;&#9608;&#9559;&#9617;&#9617;&#9617;&#9608;&#9608;&#9608;&#9559;&#9608;&#9608;&#9559;&#9617;&#9617;&#9617;&#9608;&#9608;&#9559;&#8195;&#8195;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&#9617;&#9617;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&#9617;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&#9617;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&#9617;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&#9617;&#9617;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&#9617;&#9617;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&quot;)<br>
+							print(&quot;&#9608;&#9608;&#9608;&#9608;&#9559;&#9617;&#9608;&#9608;&#9608;&#9608;&#9553;&#9562;&#9608;&#9608;&#9559;&#9617;&#9608;&#9608;&#9556;&#9565;&#8195;&#8195;&#9608;&#9608;&#9556;&#9552;&#9552;&#9608;&#9608;&#9559;&#9608;&#9608;&#9556;&#9552;&#9552;&#9608;&#9608;&#9559;&#9562;&#9552;&#9552;&#9608;&#9608;&#9556;&#9552;&#9552;&#9565;&#9608;&#9608;&#9556;&#9552;&#9552;&#9608;&#9608;&#9559;&#9608;&#9608;&#9556;&#9552;&#9552;&#9608;&#9608;&#9559;&#9608;&#9608;&#9556;&#9552;&#9552;&#9608;&#9608;&#9559;&#9608;&#9608;&#9556;&#9552;&#9552;&#9552;&#9552;&#9565;&#9608;&#9608;&#9556;&#9552;&#9552;&#9552;&#9552;&#9565;&quot;)<br>
+							print(&quot;&#9608;&#9608;&#9556;&#9608;&#9608;&#9608;&#9608;&#9556;&#9608;&#9608;&#9553;&#9617;&#9562;&#9608;&#9608;&#9608;&#9608;&#9556;&#9565;&#9617;&#8195;&#8195;&#9608;&#9608;&#9553;&#9617;&#9617;&#9608;&#9608;&#9553;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9553;&#9617;&#9617;&#9617;&#9608;&#9608;&#9553;&#9617;&#9617;&#9617;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9553;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9574;&#9565;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9553;&#9562;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&#9617;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&#9617;&#9617;&quot;)<br>
+							print(&quot;&#9608;&#9608;&#9553;&#9562;&#9608;&#9608;&#9556;&#9565;&#9608;&#9608;&#9553;&#9617;&#9617;&#9562;&#9608;&#9608;&#9556;&#9565;&#9617;&#9617;&#8195;&#8195;&#9608;&#9608;&#9553;&#9617;&#9617;&#9608;&#9608;&#9553;&#9608;&#9608;&#9556;&#9552;&#9552;&#9608;&#9608;&#9553;&#9617;&#9617;&#9617;&#9608;&#9608;&#9553;&#9617;&#9617;&#9617;&#9608;&#9608;&#9556;&#9552;&#9552;&#9608;&#9608;&#9553;&#9608;&#9608;&#9556;&#9552;&#9552;&#9608;&#9608;&#9559;&#9608;&#9608;&#9556;&#9552;&#9552;&#9608;&#9608;&#9553;&#9617;&#9562;&#9552;&#9552;&#9552;&#9608;&#9608;&#9559;&#9608;&#9608;&#9556;&#9552;&#9552;&#9565;&#9617;&#9617;&quot;)<br>
+							print(&quot;&#9608;&#9608;&#9553;&#9617;&#9562;&#9552;&#9565;&#9617;&#9608;&#9608;&#9553;&#9617;&#9617;&#9617;&#9608;&#9608;&#9553;&#9617;&#9617;&#9617;&#8195;&#8195;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9556;&#9565;&#9608;&#9608;&#9553;&#9617;&#9617;&#9608;&#9608;&#9553;&#9617;&#9617;&#9617;&#9608;&#9608;&#9553;&#9617;&#9617;&#9617;&#9608;&#9608;&#9553;&#9617;&#9617;&#9608;&#9608;&#9553;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9574;&#9565;&#9608;&#9608;&#9553;&#9617;&#9617;&#9608;&#9608;&#9553;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9556;&#9565;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&quot;)<br>
+						print(&quot;&#9562;&#9552;&#9565;&#9617;&#9617;&#9617;&#9617;&#9617;&#9562;&#9552;&#9565;&#9617;&#9617;&#9617;&#9562;&#9552;&#9565;&#9617;&#9617;&#9617;&#8195;&#8195;&#9562;&#9552;&#9552;&#9552;&#9552;&#9552;&#9565;&#9617;&#9562;&#9552;&#9565;&#9617;&#9617;&#9562;&#9552;&#9565;&#9617;&#9617;&#9617;&#9562;&#9552;&#9565;&#9617;&#9617;&#9617;&#9562;&#9552;&#9565;&#9617;&#9617;&#9562;&#9552;&#9565;&#9562;&#9552;&#9552;&#9552;&#9552;&#9552;&#9565;&#9617;&#9562;&#9552;&#9565;&#9617;&#9617;&#9562;&#9552;&#9565;&#9562;&#9552;&#9552;&#9552;&#9552;&#9552;&#9565;&#9617;&#9562;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9565;&quot;)</p>
+
+						<p>def img():<br>
+							print(&quot; _________&quot;)<br>
+							print(&quot; |MMMMMMMMM| _&quot;)<br>
+							print(&quot; ________ |MMMMMMMMM| _|l|_&quot;)<br>
+							print(&quot; |!!!!!!!_|___|MMMMMMMMM| |lllll|&quot;)<br>
+							print(&quot; |!!!!!!|=========|MMMMM| |lllll|_______&quot;)<br>
+							print(&quot; |!!!!!!|=========|MMMMM| _|lllll|HHHHHHH|&quot;)<br>
+							print(&quot; |!!!!!!|=========|MMMMM| ________|lllllllll|HHHHH|&quot;)<br>
+							print(&quot; |!!!!!!|=========|MMMMM| |unununun|lllllllll|HHHHH|______&quot;)<br>
+							print(&quot; |!!!!!!|=========|MMMMM| |nunununu|lllllllll|HH|:::::::::|&quot;)<br>
+							print(&quot; |!!!!!!|=========|MMM__|..|un__unun|lllllllll|HH|:::::::::|&quot;)<br>
+							print(&quot; |!!!!!!|=======_=|M_( ')' );' .)unu|lllllllll|HH|:::::::::|&quot;)<br>
+							print(&quot; |!!!_!!|======( )|(. &#96; ,) (_ ', )un|lllllllll|HH|:::::::::| ~~~&quot;)<br>
+							print(&quot; |!!(.)!|===__(&#96;.')_(_ ')_,)(. _)unu|lllllllll|HH|:__::::::|~~ ~~&quot;)<br>
+							print(&quot; |!(.&#96;')|==( .)' .)MMM|M|| |un|nunun|lllllllll|&#96;&#96;|( ,)_::::| ~~~~ ~&quot;)<br>
+							print(&quot; -(: _)|=(&#96;. ')_)|---|- ' &#96;&#96;|&#96;&#96;&#96;&#96;&#96;|lll____ll| (_; &#96;'):::|~~~ ~~~&quot;)<br>
+							print(&quot; | |==(_'_)|=| ______ ''/\ \' |(_'_)::::|\~~~~__|)__&quot;)<br>
+							print(&quot; | ''''|''o/&#96;.-&#96;&#96;~~~~~ &#96;&#96;-. /--\___\ &#96;&#96;|&#96;&#96;&#96;&#96;&#96;&#96; /____\____/&quot;)<br>
+							print(&quot; .... | h ( &#96;; ~~~ ~~ ~ ) |M_|#_#| ' -- __________|~&quot;)<br>
+							print(&quot; -- * '-.._~~__~..-' -- -* - / ~~~~ ~~~~~~&quot;)<br>
+							print(&quot; * - - -- ---- --- _.-'~~~~~ ~ ~~&quot;)<br>
+							print(&quot;__--_________............-------------'''''''''''''''&#96; ~~~~~ ~~~ ~~~~&quot;)<br>
+							print(&quot;~~ ~~~~~~~~ ~~~~~~~ ~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~ ~~~&quot;)<br>
+							print(&quot;~~~~~~~~~ ~~~~ ~~~~~ ~~~~~~~~~ ~ ~ ~~~~~~ ~~~~~~ ~~~~ ~~~~&quot;)<br>
+						print(&quot;~~~~~~~~ ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~ ~~~~~~ ~~~ ~~~~~~ ~~~&quot;)</p>
+
+						<p>def mexico():<br>
+							print(&quot; .&quot;)<br>
+							print(&quot; \'~~~-,&quot;)<br>
+							print(&quot; \ '-,_ &quot;)<br>
+							print(&quot; \ /\ &#96;~'~''\ M E X I C O&quot;)<br>
+							print(&quot; _\ \\ \/~\ &quot;)<br>
+							print(&quot; \__ \\ \ &quot;)<br>
+							print(&quot; \ \\. \ &quot;)<br>
+							print(&quot; \ \ \ &#96;~~&quot;)<br>
+							print(&quot; '\\ \. /&quot;)<br>
+							print(&quot; L \ \ |&quot;)<br>
+							print(&quot; \_\ \ o | _.----,&quot;)<br>
+							print(&quot; | San \ ! /&quot;)<br>
+							print(&quot; '._ Luis \_ __/ _/&quot;)<br>
+							print(&quot; \_ Potosi ''--'' __/&quot;)<br>
+							print(&quot; \.__ |&quot;)<br>
+							print(&quot; ''.__ __.._ __\&quot;&quot;)<br>
+						print(&quot; '' './ &#96; &quot;)</p>
+
+						<p>
+							def menu():<br>
+							print(&quot;******MENU INVENTARIO******&quot;)<br>
+							print(&quot;1. Ver invetario ---------------------------- 2. Producto Nuevo&quot;)<br>
+							print(&quot;3. Modificar Producto &quot;)<br>
+							print(&quot; the word exit, show, mexico&quot;)<br>
+							option=input(&quot;Introduzca el n&uacute;mero de la opci&oacute;n deseada: &quot;)<br>
+						return option</p>
+
+						<p>def ExisteCodigo(codigo):<br>
+							with open('Inventario.csv')as File:<br>
+							reader=csv.DictReader(File)<br>
+							for row in reader:<br>
+							if(codigo==row['codigo']):<br>
+							return row<br>
+						return &quot;No existe&quot;</p>
+
+						<p>def VerInventario():<br>
+							#with open('Inventario.csv')as File:<br>
+							#reader=csv.DictReader(File)<br>
+							#contador=0<br>
+							#for row in reader:<br>
+							#print('' + str(row['codigo'])+'\t' + str(row['restrictiva'])+'\t' + str(row['ubicacion'])+'\t' <br>
+							#+ str(row['descripcion'])+'\t' + str(row['unidad'])+'\t'+ str(row['tipo'])<br>
+							#+'\t' + str(row['familia'])+'\t' + str(row['stock_minimo'])+'\t' + str(row['cantidad_inicial'])<br>
+							#+'\t' + str(row['ingresos'])+'\t' + str(row['egresos'])+'\t' + str(row['perdidas'])<br>
+							#+'\t' + str(row['total'])+'\t' + str(row['observaciones'])+'\t' + str(row['observacion_perdida']))<br>
+							#contador=contador+1<br>
+							#print('****Total Filas('+str()+')')<br>
+							df=pd.read_csv(r'Inventario.csv',engine='python')<br>
+						print(df)</p>
+
+						<p>
+							def ProductoNuevo():<br>
+							codigo = input('Ingrese codigo de producto nuevo: ')<br>
+							if ExisteCodigo(codigo)==&quot;No existe&quot;:<br>
+							ubicacion=input('Ingrese codigo: ')<br>
+							descripcion=input('Into Name service: ')<br>
+							unidad=input('Into Password:_ ')<br>
+							tipo=input(' Username ?: ')<br>
+							familia=input('Email ')<br>
+							#stock_minimo=0<br>
+							#cantidad_inicial=0<br>
+							#ingresos=&quot;0&quot;<br>
+							#egresos=&quot;0&quot;<br>
+							#perdidas=&quot;0&quot;<br>
+							#total=&quot;0&quot;<br>
+							#observaciones=&quot;N&quot;<br>
+							#observaciones_perdida=&quot;O&quot;<br>
+							restrictiva=&quot;N&quot;<br>
+							with open ('Inventario.csv','a')as File:<br>
+							File.write('\n'+codigo+','+restrictiva+','+ubicacion+','+descripcion+','<br>
+							+unidad+','+tipo+','+familia)<br>
+							else:<br>
+						print(&quot;****Error el codigo ya existe****&quot;)</p>
+
+						<p>def ModificarProducto():<br>
+							codigo=input('Ingrese codigo modificar: ')<br>
+							if ExisteCodigo(codigo)==&quot;No existe&quot;:<br>
+							print('----Error el codigo que desea modificar no existe----')<br>
+							else:<br>
+							ubicacion=input('Ingrese ubicacion del codigo: ')<br>
+							descripcion=input('New name service')<br>
+							unidad=input('New password ')<br>
+							tipo=input('New username: ')<br>
+							familia=input('New email ')<br>
+						modificarBDD(codigo,ubicacion,descripcion,unidad,tipo,familia)</p>
+
+						<p>def modificarBDD(codigo,ubicacion,descripcion,unidad,tipo,familia):<br>
+							result=[]<br>
+							with open('Inventario.csv')as File:<br>
+							reader=csv.DictReader(File)<br>
+							for row in reader:<br>
+							#Compara el codigo hasta encontrar lugar vacio<br>
+							if row['codigo']==codigo:<br>
+							row['codigo']=codigo<br>
+							row['restrictiva']=row['restrictiva']<br>
+							row['service']=ubicacion<br>
+							row['email']=descripcion<br>
+							row['password']=unidad<br>
+							row['username']=tipo<br>
+							row['web']=familia<br>
+							#row['stock_minimo']=row['stock_minimo']<br>
+							# row['cantidad_inicial']=row['cantidad_inicial']<br>
+							#row['ingresos']=row['ingresos']<br>
+							#row['egresos']=row['egresos']<br>
+							#row['perdidas']=row['perdidas']<br>
+							#a=int(str(row['cantidad_inicial']))<br>
+							#b=int(str(row['ingresos']))<br>
+							#c=int(str(row['egresos']))<br>
+							#d=int(str(row['perdidas']))<br>
+							#operacion=(a+b)-(c+d)<br>
+							#total=int(str(operacion))<br>
+							#stock=int(str(row['stock_minimo']))<br>
+							#if total <= stock:<br>
+								#temp=str(total)<br>
+								# observaciones=&quot;Solicitar Material&quot;<br>
+								#row['total']=temp<br>
+								#row['observaciones']=observaciones<br>
+								# else:<br>
+								# observaciones=&quot;Stok a favor&quot;<br>
+								# row['total']=total<br>
+								#row['observaciones']=observaciones<br>
+								#row['observacion_perdida']=row['observacion_perdida']<br>
+								result.append(row)<br>
+								<br>
+								with open('Inventario.csv','w')as File:<br>
+								fieldnames=['codigo','restrictiva','service','email','password','username','web']<br>
+								writer=csv.DictWriter(File,fieldnames=fieldnames,extrasaction='ignore')<br>
+								writer.writeheader()<br>
+								writer.writerows(result)<br>
+								#writer = csv.DictWriter(csvfile, fieldnames=[&quot;Bio_Id&quot;,&quot;Last_Name&quot;,&quot;First_Name&quot;,&quot;late&quot;,&quot;undertime&quot;,&quot;total_minutes&quot;, &quot;total_ot&quot;, &quot;total_nsd&quot;, &quot;total_absences&quot;], <br>
+							# extrasaction='ignore', delimiter = ';')</p>
+
+							<p>def EliminarProducto():<br>
+								codigo=input('Ingrese codigo a eliminar: ')<br>
+								if ExisteCodigo(codigo)==&quot;No existe&quot;:<br>
+								print('----Error el codigo que desea eliminar no existe----')<br>
+								else:<br>
+								eleccion=input('Si esta seguro si=S no=N? ')<br>
+								if eleccion=='S':<br>
+							EstadoElimandoBDD(codigo)</p>
+
+							<p>def EstadoElimandoBDD(codigo):<br>
+								result=[]<br>
+								contrase&ntilde;a=str(input('Ingrese contrase&ntilde;a: '))<br>
+								if contrase&ntilde;a ==&quot;1324&quot;:<br>
+								with open('Inventario.csv')as File:<br>
+								reader=csv.DictReader(File)<br>
+								estado=&quot;S&quot;<br>
+								for row in reader:<br>
+								if row['codigo']==codigo:<br>
+								row['codigo']=row['codigo']<br>
+								row['restrictiva']=estado<br>
+								row['ubicacion']=row['ubicacion']<br>
+								row['descripcion']=row['descripcion']<br>
+								row['unidad']=row['unidad']<br>
+								row['tipo']=row['tipo']<br>
+								row['familia']=row['familia']<br>
+								row['stock_minimo']=row['stock_minimo']<br>
+								row['cantidad_inicial']=row['cantidad_inicial']<br>
+								row['ingresos']=row['ingresos']<br>
+								row['egresos']=row['egresos']<br>
+								row['perdidas']=row['perdidas']<br>
+								row['total']=row['total']<br>
+								row['observaciones']=row['observaciones']<br>
+								row['observacion_perdida']=row['observacion_perdida']<br>
+								result.append(row)<br>
+								with open('Inventario.csv','w')as File:<br>
+								fieldnames=['codigo','restrictiva','ubicacion','descripcion','unidad','tipo','familia','stock_minimo','cantidad_inicial'<br>
+								,'ingresos','egresos','perdidas','total','observaciones','observacion_perdida']<br>
+								writer=csv.DictWriter(File,fieldnames=fieldnames,extrasaction='ignore')<br>
+								writer.writeheader()<br>
+								writer.writerows(result)<br>
+								else:<br>
+							print('Contrase&ntilde;a incorrecta')</p>
+
+							<p>def BuscarProducto():<br>
+								codigo=input('Ingrese codigo de producto a buscar: ')<br>
+								if ExisteCodigo(codigo)==&quot;No existe&quot;:<br>
+								print('----Error el codigo que desea eliminar no existe----')<br>
+								else:<br>
+							BuscarBDD(codigo)</p>
+
+							<p>def BuscarBDD(codigo):<br>
+								result=[]<br>
+								with open('Inventario.csv')as File:<br>
+								reader=csv.DictReader(File)<br>
+								for row in reader:<br>
+								if row['codigo']==codigo:<br>
+								print('' + str(row['codigo'])+'\t' + str(row['restrictiva'])+'\t' + str(row['ubicacion'])+'\t' <br>
+								+ str(row['descripcion'])+'\t' + str(row['unidad'])+'\t'+ str(row['tipo'])<br>
+								+'\t' + str(row['familia'])+'\t' + str(row['stock_minimo'])+'\t' + str(row['cantidad_inicial'])<br>
+								+'\t' + str(row['ingresos'])+'\t' + str(row['egresos'])+'\t' + str(row['perdidas'])<br>
+							+'\t' + str(row['total'])+'\t' + str(row['observaciones'])+'\t' + str(row['observacion_perdida']))</p>
+
+							<p>def BuscarPorNombre():<br>
+								df=pd.read_csv(r'Inventario.csv',engine='python')<br>
+								palabra=str(input('Ingrese el nombre a filtrar: '))<br>
+							print(df[df['descripcion'].str.contains(palabra)])</p>
+
+							<p>def IngresarProducto():<br>
+								codigo=input('Ingrese codigo de producto a ingresar: ')<br>
+								if ExisteCodigo(codigo)==&quot;No existe&quot;:<br>
+								print('----Error el codigo que desea eliminar no existe----')<br>
+								else:<br>
+							IngresarProductoBDD(codigo)</p>
+
+							<p>def IngresarProductoBDD(codigo):<br>
+								result=[]<br>
+								print('Datos del producto') <br>
+								BuscarBDD(codigo)<br>
+								ingresos=input('Cantidad a ingresar a bodega: ')<br>
+								with open('Inventario.csv')as File:<br>
+								reader=csv.DictReader(File)<br>
+								for row in reader:<br>
+								#Compara el codigo hasta encontrar lugar vacio<br>
+								if row['codigo']==codigo:<br>
+								row['codigo']=row['codigo']<br>
+								row['restrictiva']=row['restrictiva']<br>
+								row['ubicacion']=row['ubicacion']<br>
+								row['descripcion']=row['descripcion']<br>
+								row['unidad']=row['unidad']<br>
+								row['tipo']=row['tipo']<br>
+								row['familia']=row['familia']<br>
+								row['stock_minimo']=row['stock_minimo']<br>
+								row['cantidad_inicial']=row['cantidad_inicial']<br>
+								verificar=int(str(row['ingresos']))<br>
+								temp=int(str(ingresos))<br>
+								total_ingreso=0<br>
+								if verificar>0:<br>
+								total_ingreso=verificar+temp<br>
+								temp1=str(total_ingreso)<br>
+								row['ingresos']=temp1<br>
+								else:<br>
+								row['ingresos']=ingresos <br>
+								row['egresos']=row['egresos']<br>
+								row['perdidas']=row['perdidas']<br>
+								a=int(str(row['cantidad_inicial']))<br>
+								b=int(str(row['ingresos']))<br>
+								c=int(str(row['egresos']))<br>
+								d=int(str(row['perdidas']))<br>
+								operacion=(a+b)-(c+d)<br>
+								total=int(str(operacion))<br>
+								stock=int(str(row['stock_minimo']))<br>
+								if total <= stock:<br>
+									temp=str(total)<br>
+									observaciones=&quot;Solicitar Material&quot;<br>
+									row['total']=temp<br>
+									row['observaciones']=observaciones<br>
+									else:<br>
+									observaciones=&quot;Stok a favor&quot;<br>
+									row['total']=total<br>
+									row['observaciones']=observaciones<br>
+									row['observacion_perdida']=row['observacion_perdida']<br>
+									result.append(row) <br>
+									with open('Inventario.csv','w')as File:<br>
+									fieldnames=['codigo','restrictiva','ubicacion','descripcion','unidad','tipo','familia','stock_minimo','cantidad_inicial'<br>
+									,'ingresos','egresos','perdidas','total','observaciones','observacion_perdida']<br>
+									writer=csv.DictWriter(File,fieldnames=fieldnames,extrasaction='ignore')<br>
+									writer.writeheader()<br>
+									writer.writerows(result)<br>
+									<br>
+									def SalidaDeProducto():<br>
+									codigo=input('Ingrese codigo de producto para darle salida: ')<br>
+									if ExisteCodigo(codigo)==&quot;No existe&quot;:<br>
+									print('----Error el codigo que desea eliminar no existe----')<br>
+									else:<br>
+								SalidaProductoBDD(codigo)</p>
+
+								<p>def SalidaProductoBDD(codigo):<br>
+									result=[]<br>
+									print('Datos del producto') <br>
+									BuscarBDD(codigo)<br>
+									egresos=input('Cantidad de salida de bodega: ')<br>
+									with open('Inventario.csv')as File:<br>
+									reader=csv.DictReader(File)<br>
+									for row in reader:<br>
+									#Compara el codigo hasta encontrar lugar vacio<br>
+									if row['codigo']==codigo:<br>
+									row['codigo']=row['codigo']<br>
+									row['restrictiva']=row['restrictiva']<br>
+									row['ubicacion']=row['ubicacion']<br>
+									row['descripcion']=row['descripcion']<br>
+									row['unidad']=row['unidad']<br>
+									row['tipo']=row['tipo']<br>
+									row['familia']=row['familia']<br>
+									row['stock_minimo']=row['stock_minimo']<br>
+									row['cantidad_inicial']=row['cantidad_inicial']<br>
+									row['ingresos']=row['ingresos']<br>
+									verificar=int(str(row['egresos']))<br>
+									temp=int(str(egresos))<br>
+									total_egresos=0<br>
+									if verificar>0:<br>
+									total_egresos=verificar+temp<br>
+									temp1=str(total_egresos)<br>
+									row['egresos']=temp1<br>
+									else:<br>
+									row['egresos']=egresos<br>
+									row['perdidas']=row['perdidas']<br>
+									a=int(str(row['cantidad_inicial']))<br>
+									b=int(str(row['ingresos']))<br>
+									c=int(str(row['egresos']))<br>
+									d=int(str(row['perdidas']))<br>
+									operacion=(a+b)-(c+d)<br>
+									total=int(str(operacion))<br>
+									stock=int(str(row['stock_minimo']))<br>
+									if total <= stock:<br>
+										temp=str(total)<br>
+										observaciones=&quot;Solicitar Material&quot;<br>
+										row['total']=temp<br>
+										row['observaciones']=observaciones<br>
+										else:<br>
+										observaciones=&quot;Stok a favor&quot;<br>
+										row['total']=total<br>
+										row['observaciones']=observaciones<br>
+										row['observacion_perdida']=row['observacion_perdida']<br>
+										result.append(row) <br>
+										with open('Inventario.csv','w')as File:<br>
+										fieldnames=['codigo','restrictiva','ubicacion','descripcion','unidad','tipo','familia','stock_minimo','cantidad_inicial'<br>
+										,'ingresos','egresos','perdidas','total','observaciones','observacion_perdida']<br>
+										writer=csv.DictWriter(File,fieldnames=fieldnames,extrasaction='ignore')<br>
+										writer.writeheader()<br>
+									writer.writerows(result)</p>
+
+									<p>def AjustePerdida():<br>
+										codigo=input('Ingrese codigo de producto perdido: ')<br>
+										if ExisteCodigo(codigo)==&quot;No existe&quot;:<br>
+										print('----Error el codigo que desea eliminar no existe----')<br>
+										else:<br>
+									AjustePerdidaBDD(codigo)</p>
+
+									<p>def AjustePerdidaBDD(codigo):<br>
+										result=[]<br>
+										contrase&ntilde;a=str(input('Ingrese contrase&ntilde;a: '))<br>
+										if contrase&ntilde;a == &quot;1324&quot;: <br>
+										print('Datos del producto')<br>
+										BuscarBDD(codigo)<br>
+										perdidas=input('Cantidad de producto perdido: ')<br>
+										observacion_perdida=input('Escriba observaci&oacute;n de perdida: ')<br>
+										with open('Inventario.csv')as File:<br>
+										reader=csv.DictReader(File)<br>
+										for row in reader:<br>
+										#Compara el codigo hasta encontrar lugar vacio<br>
+										if row['codigo']==codigo:<br>
+										row['codigo']=row['codigo']<br>
+										row['restrictiva']=row['restrictiva']<br>
+										row['ubicacion']=row['ubicacion']<br>
+										row['descripcion']=row['descripcion']<br>
+										row['unidad']=row['unidad']<br>
+										row['tipo']=row['tipo']<br>
+										row['familia']=row['familia']<br>
+										row['stock_minimo']=row['stock_minimo']<br>
+										row['cantidad_inicial']=row['cantidad_inicial']<br>
+										row['ingresos']=row['ingresos']<br>
+										row['egresos']=row['egresos']<br>
+										verificar=int(str(row['perdidas']))<br>
+										temp=int(str(perdidas))<br>
+										total_perdidas=0<br>
+										if verificar>0:<br>
+										total_perdidas=verificar+temp<br>
+										temp1=str(total_perdidas)<br>
+										row['perdidas']=temp1<br>
+										else:<br>
+										row['perdidas']=perdidas<br>
+										a=int(str(row['cantidad_inicial']))<br>
+										b=int(str(row['ingresos']))<br>
+										c=int(str(row['egresos']))<br>
+										d=int(str(row['perdidas']))<br>
+										operacion=(a+b)-(c+d)<br>
+										total=int(str(operacion))<br>
+										stock=int(str(row['stock_minimo']))<br>
+										if total <= stock:<br>
+											temp=str(total)<br>
+											observaciones=&quot;Solicitar Material&quot;<br>
+											row['total']=temp<br>
+											row['observaciones']=observaciones<br>
+											else:<br>
+											observaciones=&quot;Stok a favor&quot;<br>
+											row['total']=total<br>
+											row['observaciones']=observaciones<br>
+											if row['observacion_perdida']==&quot;Vacio&quot;:<br>
+											row['observacion_perdida']=observacion_perdida<br>
+											else:<br>
+											row['observacion_perdida']=row['observacion_perdida']+&quot;,&quot;+observacion_perdida<br>
+											result.append(row) <br>
+											with open('Inventario.csv','w')as File:<br>
+											fieldnames=['codigo','restrictiva','ubicacion','descripcion','unidad','tipo','familia','stock_minimo','cantidad_inicial'<br>
+											,'ingresos','egresos','perdidas','total','observaciones','observacion_perdida']<br>
+											writer=csv.DictWriter(File,fieldnames=fieldnames,extrasaction='ignore')<br>
+											writer.writeheader()<br>
+											writer.writerows(result)<br>
+											else:<br>
+										print('Contrase&ntilde;a incorrecta')</p>
+
+										<p>def ReporteStockMinimo():<br>
+											df=pd.read_csv(r'Inventario.csv',engine='python')<br>
+										print(df[df['observaciones'].str.contains(&quot;Solicitar Material&quot;)])</p>
+
+										<p>def ReporteInventarioTotal():<br>
+											df=pd.read_csv(r'Inventario.csv',engine='python')<br>
+											ord=df.sort_values(by=['ubicacion'])[['ubicacion','tipo','familia']]<br>
+										print(ord)</p>
+
+										<p>def ReporteParcialStock():<br>
+											df=pd.read_csv(r'Inventario.csv',engine='python')<br>
+										print(df[df['observaciones'].str.contains(&quot;Stok a favor&quot;)])</p>
+
+										<p>def RellenarEspacios():<br>
+											codigo=input('Ingrese codigo de producto a rellenar: ')<br>
+											if ExisteCodigo(codigo)==&quot;No existe&quot;:<br>
+											print('----Error el codigo que desea eliminar no existe----')<br>
+											else:<br>
+										RellenarEspaciosBDD(codigo)</p>
+
+										<p>def RellenarEspaciosBDD(codigo):<br>
+											result=[]<br>
+											with open('Inventario.csv')as File:<br>
+											reader=csv.DictReader(File)<br>
+											restrictiva=&quot;N&quot;<br>
+											ubicacion=&quot;Vacio&quot;<br>
+											descripcion=&quot;Vacio&quot;<br>
+											unidad=&quot;Vacio&quot;<br>
+											tipo=&quot;Vacio&quot;<br>
+											familia=&quot;Vacio&quot;<br>
+											stock_minimo=&quot;0&quot;<br>
+											cantidad_inicial=&quot;0&quot;<br>
+											ingresos=&quot;0&quot;<br>
+											egresos=&quot;0&quot;<br>
+											perdidas=&quot;0&quot;<br>
+											total=&quot;0&quot;<br>
+											observaciones=&quot;Vacio&quot;<br>
+											observaciones_perdida=&quot;Vacio&quot;<br>
+											for row in reader:<br>
+											#Compara el codigo hasta encontrar lugar vacio<br>
+											if row['codigo']==codigo:<br>
+											row['codigo']=row['codigo']<br>
+											if row['restrictiva'] ==&quot;&quot;:<br>
+											row['restrictiva']=restrictiva<br>
+											else:<br>
+											row['restrictiva']=row['restrictiva']<br>
+											<br>
+											if row['ubicacion'] ==&quot;&quot;:<br>
+											row['ubicacion']=ubicacion<br>
+											else:<br>
+											row['ubicacion']=row['ubicacion']<br>
+											<br>
+											if row['descripcion']==&quot;&quot;:<br>
+											row['descripcion']=descripcion<br>
+											else:<br>
+											row['descripcion']=row['descripcion']<br>
+											<br>
+											if row['unidad']==&quot;&quot;:<br>
+											row['unidad']=unidad<br>
+											else:<br>
+											row['unidad']=row['unidad']<br>
+											<br>
+											if row['tipo']==&quot;&quot;:<br>
+											row['tipo']=tipo<br>
+											else: <br>
+											row['tipo']=row['tipo']<br>
+											<br>
+											if row['familia']==&quot;&quot;:<br>
+											row['familia']=familia<br>
+											else: <br>
+											row['familia']=row['familia']<br>
+											<br>
+											if row['stock_minimo']==&quot;&quot;:<br>
+											row['stock_minimo']=stock_minimo<br>
+											else:<br>
+											row['stock_minimo']=row['stock_minimo']<br>
+											<br>
+											if row['cantidad_inicial']==&quot;&quot;:<br>
+											row['cantidad_inicial']=cantidad_inicial<br>
+											else:<br>
+											row['cantidad_inicial']=row['cantidad_inicial']<br>
+											<br>
+											if row['ingresos']==&quot;&quot;:<br>
+											row['ingresos']=ingresos<br>
+											else: <br>
+											row['ingresos']<br>
+											<br>
+											if row['egresos']==&quot;&quot;:<br>
+											row['egresos']=egresos<br>
+											else:<br>
+											row['egresos']=row['egresos']<br>
+											<br>
+											if row['perdidas']==&quot;&quot;:<br>
+											row['perdidas']=perdidas<br>
+											else: <br>
+											row['perdidas']=row['perdidas']<br>
+											<br>
+											if row['total']==&quot;&quot;:<br>
+											row['total']=total<br>
+											else:<br>
+											row['total']=row['total']<br>
+											<br>
+											if row['observaciones']==&quot;&quot;:<br>
+											row['observaciones']=observaciones<br>
+											else:<br>
+											row['observaciones']=row['observaciones']<br>
+											<br>
+											if row['observacion_perdida']==&quot;&quot;:<br>
+											row['observacion_perdida']=observaciones_perdida<br>
+											else: <br>
+											row['observacion_perdida']=row['observacion_perdida']<br>
+											result.append(row)<br>
+											<br>
+											with open('Inventario.csv','w')as File:<br>
+											fieldnames=['codigo','restrictiva','ubicacion','descripcion','unidad','tipo','familia','stock_minimo','cantidad_inicial'<br>
+											,'ingresos','egresos','perdidas','total','observaciones','observacion_perdida']<br>
+											writer=csv.DictWriter(File,fieldnames=fieldnames,extrasaction='ignore')<br>
+											writer.writeheader()<br>
+										writer.writerows(result)</p>
+
+										<p>
+											def main():<br>
+											while True:<br>
+											show()<br>
+											option=menu()<br>
+											if option == '1':<br>
+											VerInventario()<br>
+											elif option == '2':<br>
+											ProductoNuevo()<br>
+											elif option == '3':<br>
+											ModificarProducto()<br>
+											elif option == '4':<br>
+											EliminarProducto()<br>
+											elif option == '5':<br>
+											BuscarProducto()<br>
+											elif option == '6':<br>
+											BuscarPorNombre()<br>
+											elif option == '7':<br>
+											IngresarProducto()<br>
+											elif option == '8':<br>
+											SalidaDeProducto()<br>
+											elif option == '9':<br>
+											AjustePerdida()<br>
+											elif option == '10':<br>
+											ReporteStockMinimo()<br>
+											elif option == '11':<br>
+											ReporteInventarioTotal()<br>
+											elif option == '12':<br>
+											ReporteParcialStock()<br>
+											elif option == '13':<br>
+											RellenarEspacios()<br>
+											elif option == 'show':<br>
+											img()<br>
+											elif option == 'mexico':<br>
+											mexico()<br>
+											elif option == 'exit':<br>
+											break<br>
+										return</p>
+
+										<p>main()</p>
+										<p>counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+											for key in counts:
+											if counts[key] > 10:
+											print(key, counts[key])
+
+
+											
+											</p>
+											<h3>whit database 'inventario.cvs'</h3>
+											<p>def show():
+												print("███╗░░░███╗██╗░░░██╗  ██████╗░░█████╗░████████╗░█████╗░██████╗░░█████╗░░██████╗███████╗")<br>
+												print("████╗░████║╚██╗░██╔╝  ██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔════╝")<br>
+												print("██╔████╔██║░╚████╔╝░  ██║░░██║███████║░░░██║░░░███████║██████╦╝███████║╚█████╗░█████╗░░")<br>
+												print("██║╚██╔╝██║░░╚██╔╝░░  ██║░░██║██╔══██║░░░██║░░░██╔══██║██╔══██╗██╔══██║░╚═══██╗██╔══╝░░")<br>
+												print("██║░╚═╝░██║░░░██║░░░  ██████╔╝██║░░██║░░░██║░░░██║░░██║██████╦╝██║░░██║██████╔╝███████╗")<br>
+												print("╚═╝░░░░░╚═╝░░░╚═╝░░░  ╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝╚═════╝░╚══════╝")<br>
+											</p>
+
+
+										</section>
+
+									</div>
+								</section>
+
+								<!-- Footer -->
+								<footer id="footer">
+									<div class="container">
+										<ul class="icons">
+											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+										</ul>
+									</div>
+									<div class="copyright">
+										&copy; Untitled. All rights reserved.
+									</div>
+								</footer>
+
+								<!-- Scripts -->
+								<script src="../assets/js/jquery.min.js"></script>
+								<script src="../assets/js/jquery.scrollex.min.js"></script>
+								<script src="../assets/js/skel.min.js"></script>
+								<script src="../assets/js/util.js"></script>
+								<script src="../assets/js/main.js"></script>
+
+							</body>
+							</html>

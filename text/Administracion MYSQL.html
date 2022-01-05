@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>MYSQL</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body >
+
+	<!-- Header -->
+	<header id="header">
+		<div class="menu"><a href="../index.html">Back</a>
+			<span>Administracion de bases de datos</span>
+		</div>
+		<div class="align-center">
+			<p>Curso de Edutin Academy</p><img src="../img/icon_sub4.png">
+		</div>
+	</header>
+
+
+
+	
+
+	<!-- Two -->
+	<section id="two" class="wrapper style2">
+		<div class="inner">
+			<div class="box">
+				<div class="content">
+					<header class="align-center">
+
+						<h2 id="genero1">MYSQL</h2>
+					</header>
+					<section class="paraf">
+						<p>Hola a todos y bienvenidos al curso de MySQL. En esta ocasión, Edutin Academy 
+							pensando en las necesidades intelectuales de sus estudiantes, diseñó este curso 
+							con el objetivo de que el estudiante conozca, comprenda y emplee técnicas que 
+							permitan el manejo de forma eficaz de las grandes cantidades de información, 
+							siendo este un conocimiento altamente necesario al momento de la toma de 
+							decisiones en cualquier empresa.
+						</p>
+						<br><p>Diseñamos este curso, debido a que en la actualidad, es imprescindible para las 
+							empresas mantener ordenada la información de sus clientes, proveedores, 
+							empleados, entre otros. Por esta razón, a lo largo del curso estaremos conociendo 
+							el concepto y el funcionamiento de una base de datos, los diferentes tipos de base 
+						de datos, pero enfocándonos en el modelo relacional y el diagrama entidad-relación. </p><br>
+						<p>Además, emplearemos el lenguaje SQL y el sistema de gestión de base de datos
+							MySQL, el cual permitirá crear nuestra primera base de datos, tablas y por ende, 
+							seremos capaz de insertar, actualizar y eliminar información. Posteriormente, 
+							trabajaremos con las cláusulas, consultas y procedimientos almacenados, entre 
+						otras</p>	
+						<p>MySQL ha sido desarrollado por Oracle y se trata de un sistema de gestión de bases de datos relacional. Se trata de un software de código abierto y de distribución libre</p>
+						<p>A día de hoy se puede decir que se trata de la base de datos más popular en el mundo, sobretodo de cara al desarrollo web, donde MySQL  se combina frecuentemente con Linux, Apache y PHP, constituyendo la popular pila de desarrollo LAMP.</p>
+						<p>nstalación de los ficheros del programa
+							La descarga de los programas se realiza desde www.mysql.com, Hay dos posibilidades
+							de instalación en Windows.
+							1> La más sencilla es utilizar el programa de instalación, el cual colocará todos los
+							elementos necesarios en las carpetas correspondientes. La instalacion  Bajarse los archivos comprimidos sin la instalación. Bastará con descomprimirlos
+							en C:
+							Supondremos que la instalación se realiza con el primer método (que es lo más común).
+							Normalmente el programa se instalará en la carpeta MySQL dentro del disco duro
+							principal (el C:). Todos los ejecutables se encontrarán en la carpeta bin que estará
+							dentro de la anterior.
+							No habrá ningún acceso al programa desde el apartado programas de Windows
+						(debemos hacerlo nosotros manualmente si lo deseamos).</p>
+						<br>
+						<h2>configuración del entorno</h2>
+						<p>
+							El entorno se puede configurar a mano a través de un archivo llamado mysql.ini que
+							normalmente se encuentra en la carpeta Windows o Winnt.
+							No obstante es más sencillo hacerlo con el programa WinMySQLAdmin. Este es
+							un programa realizado para Windows que nos permite editar mysql.ini de forma más
+							sencilla.
+							La primera vez que este programa arranca nos pregunta nuestro nombre de usuario
+							y contraseña. Los usuarios de MySQL no tienen nada que ver con los de Windows. Tras
+							indicar el usuario, el programa colocará los valores más usuales de configuración. Cada
+							vez que volvamos a arrancar este programa, se nos permitirá cambiar la configuración.
+						</p>
+						<h2>conexión y desconexión al servidor</h2>
+						<p>
+							La conexión al servidor MySQL para crear, modificar o realizar cualquier otra operación
+							sobre bases de datos. Se realiza mediante el programa mysql que también se encuentra
+							en la carpeta bin del programa.
+							La ejecución de este programa nos lleva al llamado monitor de MySQL que es la
+							línea de comandos desde la que podemos ejecutar instrucciones MySQL.
+							Este programa posee numerosas opciones de arranque. Para saber cuáles son, basta
+							ejecutar la instrucción mysql --help desde la línea de comandos.
+							Normalmente la entrada normal al monitor se hace mediante:
+						</p>
+						<p>Donde host es el nombre del servidor (si no se ejecuta desde red será localhost) y user
+							es el nombre del usuario que desea utilizar el servidor. El último parámetro sirve para
+							poder introducir la contraseña. Ésta será pedida inmediatamente después de haber sido
+							pulsada la tecla Intro.
+							En la mayoría de instalaciones (sobre todo en Windows) se puede entrar
+							simplemente poniendo mysql desde la línea de comandos. Esto asumirá como usuario
+							anónimo y como servidor el servidor local. Hay un usuario de privilegios absolutos que
+							se llama root.
+							En cualquier caso si hemos accedido bien al monitor, en la línea de comandos
+							aparecerá el texto mysql>. Que indicará que el monitor está esperando comandos para
+							ejecutar sobre el servidor.
+						Para abandonar el monitor basta escribir el comando quit.</p>
+
+						<h2>entrada de comandos en el monitor</h2>
+						<p>
+							MySQL utiliza el lenguaje SQL de bases de datos para trabajar. Esas serán las sentencias
+							que normalmente se utilizan en el monitor.
+							Sobre los comandos hay que tener en cuenta que:Manual de MySQL
+							1> Da lo mismo escribir en mayúsculas o en minúsculas
+							2> Todos los comandos terminan con el símbolo “;”
+							3> El comando termina su ejecución si en la línea de comandos observamos el texto
+							mysql>
+							4> Se pueden realizar operaciones aritméticas (3*6)
+							5> En la misma línea se pueden colocar dos comandos (por ejemplo: SELECT 3*6;
+							SELECT SIN(PI());) siempre y cuando los puntos y comas se coloquen de
+							forma adecuada
+							la instrucción, el monitor coloca el símbolo “->”, en lugar del normal “mysql>”).
+							Ejemplo:
+							mysql> SELECT * FROM clientes
+						-->WHERE apellido="Jiménez";
+						6> Una instrucción puede abarcar más de 1 línea (para informar que no ha terminado
+						7> Una instrucción se puede anular antes del punto y coma, colocando el texto “\c”
+						8> Las cadenas de texto literal puede ir entre símbolos de comilla simple o símbolos
+					de comilla doble. Si se pulsa Intro antes de cerrar la cad</p>
+					<h2>Bases de datos</h2>
+					<p>MySQL almacena las bases de datos en la carpeta data que está en la carpeta raíz de la
+						instalación del programa. Cada base de datos crea una carpeta en la que aparecen los
+					archivos necesarios para el correcto funcionamiento de la aplicación.</p>
+					<h2>comando show databases</h2>
+					<p>
+						El comando show databases permite visualizar las bases de datos actualmente
+						activas. Ejemplo:
+						mysql> show databases;
+						
+						| Database |
+												| mysql|
+						| test|
+												2 rows in set (0.01 sec)
+						En el ejemplo hay dos bases de datos activas, la principal llamada mysql y la base test
+						(una base de datos de prueba). Hay bases de datos que no nos serán mostradas si no
+						tenemos permiso para ello.
+					</p>
+					<h2>utilizar una base de datos</h2>
+					<p>
+						El comando use nos permite utilizar una base de datos. Es (junto a quit) el único
+						comando que no requiere punto y coma.
+						mysql> use test
+						Eso hace que test sea la base de datos de trabajo actual.
+						También se puede seleccionar la base de datos para utilizar al arrancar el propio
+					monitor. Para ello basta poner el nombre de la base de datos tras el comando mysql</p>
+					<h2>crear una base de datos</h2>
+					<p>
+						Se realiza de esta forma:
+						mysql>create database prueba;
+						Query OK, 1 row affected (0.00 sec)
+						La base de datos recién creada estará representada por una carpeta dentro de la carpeta
+						data de mysql.
+						Aunque la base esté creada, habrá que utilizar el comando use para trabajar con
+					ella.</p>
+					<h2>borrar bases de datos</h2>
+					<p>Se trata del comando drop database al cual le sigue el nombre de la base de datos.
+						mysql>drop database prueba;
+						Query OK, 0 rows affected (0.00 sec)
+					</p>
+					<h2>Tablas</h2>
+					<p>El comando show tables; muestra las tablas de la base de datos actual. Ejemplo:
+						mysql> use mysql
+						Database changed
+						mysql> show tables;
+						
+						| Tables_in_mysql |
+						
+						| columns_priv|
+						| db|
+						| func|
+						| host|
+						| tables_priv|
+						| user|
+					
+						6 rows in set (0.00 sec)
+						Se puede utilizar la sintaxis show tables from bd, donde bd es el nombre de una base
+					de datos que no tiene porque estar en uso.</p>
+					<h2>Crear tablas</h2>
+					<p>Esta es ya una operación muy importante. Es el comando create table el que la realiza.
+						Este comando funciona con esta sintaxis:
+						create table nombreTabla (nombrecampo1 tipodatos(tamaño),
+						nombrecampo2 tipodatos(tamaño),....);
+						Ejemplo:
+						mysql> create table personas (nombre varchar(30),
+						->apellido1 varchar(30), apellido2 varchar(30),
+						->telefono varchar(9));
+						Query OK, 0 rows affected (0.01 sec)
+						7indicar opciones en los campos en la creación
+						Durante la creación de campos se pueden indicar opciones (las opciones se enumeran
+						más abajo) sobre los campos. Estas opciones se colocan tras el tipo de datos del campo.
+						Ejemplo (not null y unique):
+						mysql> create table personas (nombre varchar(30) not null,
+						->apellido1 varchar(30), apellido2 varchar(30),
+						->telefono varchar(9) unique);
+						establecimiento de la clave durante la creación
+						Se puede añadir la palabra primary key tras el tipo de datos del campo que se desea
+						sea la clave de la tabla. Si la clave es más de un campo se realiza colocando la palabra
+						primary key como nombre de campo, seguida de los campos que forman la clave entre
+						paréntesis. Ejemplo:
+						mysql> create table pieza (codigo1 varchar(5),
+						->codigo2 int(2), peso int,
+						->descripcion text,
+						->primary key (codigo1, codigo2);</p>
+						<h2>estructura de las tablas</h2>
+						<p>El comando describe seguido del nombre de una tabla, nos permite ver la estructura
+							completa de una tabla. Ejemplo:
+							mysql> describe personas;
+							
+							| Field| Type| Null | Key | Default | Extra |
+							
+							| nombre| varchar(30) | YES || NULL||
+							| apellido1 | varchar(30) | YES || NULL||
+							| apellido2 | varchar(30) | YES || NULL||
+							| telefono | varchar(9) | YES || NULL||
+
+						4 rows in set (0.00 sec)</p>
+
+					</section>
+
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Jahir JV. All rights reserved.
+				</div>
+			</footer>
+
+		</body>
+		</html>
