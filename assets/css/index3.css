@@ -2761,4 +2761,9 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 	@media screen and (max-width: 480px)
 	{#header .avatar img{width: 300px; height: 300px;}
 
-	
+	#show1{
+		width: 500px;
+		left: 50%;
+		margin-left:-250;
+		position: absolute;
+	}
