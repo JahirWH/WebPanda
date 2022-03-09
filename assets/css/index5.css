@@ -6,12 +6,17 @@ p.title{
 /*/
 a{
 	color: rgb(200,200,200);
-	text-decoration: none;
+text-decoration: none;
+margin-top: -0px;
+height: 100%;
+width: 100%;
+text-align: justify;
 }
 p.sub{
 	margin-left: 50px;
 	font-size: 30px;
 	color: rgb(200,200,200);
+	text-align: initial;
 }
 body{
 	background:rgb(70,70,70);
@@ -26,7 +31,6 @@ h5{
 div .div1{
 	width: auto;
 	height: fit-content;
-	margin: 0px 0px 0px 107px;
 
 
 }
@@ -44,14 +48,16 @@ p img.volver:hover{
 div.contenido{
 	display: inline-flex;
 	margin:14px;
+	width: 150px;
 	padding: 10px 30px 19px;
 	padding-right: 90px;
-	height: 40px;
+	height: 30px;
 	background:rgb(50,50,50);
 	border-radius: 9px;
 	color:rgb(180,180,180);
+	overflow: hidden;
 }
-div.contenido:hover{
+div.contenido:hover p{
 	color: rgb(255,255,255);
 }
 p{
@@ -65,4 +71,11 @@ div.div2{
 	font-size: 13px;
 
 	height: fit-content;
+}
+
+.texto{
+  margin-top: 0px;
+  font-size: 11px;
+  text-align: justify-all;
+  width: 150px;
 }
