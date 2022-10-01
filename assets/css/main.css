@@ -15,16 +15,24 @@ h3{color: greenyellow;}
 a{
 	color: yellow;
 }
+h5,h6{
+	color: #888;
+}
 ul{
 	list-style: none;
 	display: flex;
-  }
-  p{
-  	justify-content: center;
-  	text-align: justify;
-  }
+}
+p{
+	justify-content: center;
+	text-align: justify;
+}
+
+@font-face{
+	font-family:font1;
+	src:url(../../fonts/fuente3.ttf);
+}
 .topwords{
-color: #bbb;
+	color: #bbb;
 }
 
 #header{
@@ -36,13 +44,16 @@ color: #bbb;
 	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.63);
 
 }
+.title_1{
+	font-family: 'font1';
+	font-size: 20px;
+}
 .menu{
 	position: relative;
 	height: fit-content;
 	float: left;
-	margin-top: 15px;
+	margin-top: 26px;
 	margin-left: 30px;
-	margin-right: auto;
 	display: block;
 }
 .menu a {
@@ -66,14 +77,14 @@ color: #bbb;
 	align-items: center;
 	text-align: left;
 	color: #ccc;
-	margin: 10px auto;
+	margin: auto;
 	display: flex;	
 }
 .align-center img{
- 	width: auto;
- 	height: 60px;
- 	margin: 10px;
- }
+	width: auto;
+	height: 60px;
+	margin: 10px;
+}
 
 
 
@@ -82,7 +93,7 @@ color: #bbb;
 
 #two{
 	width: 100%;
-		height: fit-content;
+	height: fit-content;
 	position: relative;
 	margin-top: 40px;
 }
@@ -91,15 +102,26 @@ color: #bbb;
 }
 .content{
 	margin: 10px auto;
-		width: 80%;
+	width: 80%;
 	text-align: justify;
 }
 
+.back{
+	transform: rotate(91deg);
+	width: 50px;
+	height: auto;
+	transition-duration: 0.5s;
+}
+.back:hover{
+	transform: rotate(450deg);
+}
 p{
 	color: #bbb;
 }
 
 .paraf{
+	width: 100%;
+	text-align: center;
 	border-radius: 20px;
 	padding: 20px;
 	background-color: rgba(0,0,0,0.430);
@@ -119,9 +141,9 @@ p{
 }
 .icons{
 	list-style: none;
-		display: inline-flex;
+	display: inline-flex;
 
-margin: 10px auto;
+	margin: 10px auto;
 }
 .icons li{
 
@@ -134,9 +156,9 @@ margin: 10px auto;
 	color: #fff;
 }
 .links a{
-color: #aaa;
-margin: 10px;
-text-decoration: none;
+	color: #aaa;
+	margin: 10px;
+	text-decoration: none;
 }
 .links a:hover{
 	text-decoration: underline;
