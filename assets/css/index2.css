@@ -234,36 +234,36 @@
 		justify-content: center;
 	}
 	.contenido{
-		  position: relative;
-  margin: 20px;
-  display: block;
-  background-color: rgb(255, 250, 250);
-  border-radius: 10px;
-  box-shadow: 10px 10px 16px;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-  width: 270px;
-  height: 300px;
+		position: relative;
+		margin: 20px;
+		display: block;
+		background-color: rgb(255, 250, 250);
+		border-radius: 10px;
+		box-shadow: 10px 10px 16px;
+		transition-duration: 0.2s;
+		transition-timing-function: linear;
+		width: 270px;
+		height: 300px;
 
 	}
 
 	img{
 		position: relative;
-width: 90%;
-border-radius: 5px;
-height: 70%;
-object-fit: cover;
-z-index: 200;
-justify-content: center;
-align-content: center;
-margin-top: 10px;
-margin: auto;
-  margin-top: auto;
-margin-top: 10px;
-margin-top: 10px;
-display: flex;
-display: block;
-top: 10px;
+		width: 90%;
+		border-radius: 5px;
+		height: 70%;
+		object-fit: cover;
+		z-index: 200;
+		justify-content: center;
+		align-content: center;
+		margin-top: 10px;
+		margin: auto;
+		margin-top: auto;
+		margin-top: 10px;
+		margin-top: 10px;
+		display: flex;
+		display: block;
+		top: 10px;
 	}
 
 	.text{
@@ -285,55 +285,55 @@ top: 10px;
 		align-items: center;
 		z-index: 100;
 		top: 0px;
-    transition-duration: 0.1s;
-  transition-timing-function: ease-out;
-  visibility: hidden;
-}
-.texto_1{
-	 display: block;
-position: relative;
-width: 100%;
-height: 25%;
-font-size: 25px;
-margin-left: 15px;
+		transition-duration: 0.1s;
+		transition-timing-function: ease-out;
+		visibility: hidden;
+	}
+	.texto_1{
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 25%;
+		font-size: 25px;
+		margin-left: 15px;
 
-}
-h2{
-	color: rgb(77, 76, 76);
-	text-align: left;
-	font-family: fuente3;
-	margin-block-start: 0em;
-	margin-block-end: 0em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
-	font-weight:normal;
-	height: 15px;
-	margin-top: 20px;
-	margin-left: 15px;
-}
-h6{
-	color: rgb(150,150,150);
-text-align: justify-all;
-font-family: fuente3;
-display: block;
-height: auto;
-font-weight: normal;
-margin-top: 60px;
+	}
+	h2{
+		color: rgb(77, 76, 76);
+		text-align: left;
+		font-family: fuente3;
+		margin-block-start: 0em;
+		margin-block-end: 0em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight:normal;
+		height: 15px;
+		margin-top: 20px;
+		margin-left: 15px;
+	}
+	h6{
+		color: rgb(150,150,150);
+		text-align: justify-all;
+		font-family: fuente3;
+		display: block;
+		height: auto;
+		font-weight: normal;
+		margin-top: 60px;
 
-}
+	}
 
 
-.contenido:hover .text{
-	z-index: 300;
-	width: 100%;
-	opacity: 100%;
-	height: 100%;
-	visibility: visible;
-	
-} 
-.contenido:hover{
-	transform: scale(1.1);
-}
+	.contenido:hover .text{
+		z-index: 300;
+		width: 100%;
+		opacity: 100%;
+		height: 100%;
+		visibility: visible;
+		
+	} 
+	.contenido:hover{
+		transform: scale(1.1);
+	}
 
 
 
