@@ -74,11 +74,14 @@
 
 	
 	/*Nav*/
+	a{
+		text-decoration: none ;
+	}
 	body{
 		padding: 0;
 		margin: 0;
-		background-image: url(../../images/Fondo27.jpg);
-		background-color: #fff;
+		/*background-image: url(../../images/Fondo27.jpg);*/
+		background-color:#232323;
 		display: grid;
 	}
 	body::-webkit-scrollbar {
@@ -129,8 +132,12 @@
 	}
 	button{
 		width: 50px;
-		height: 50px;
-		border-radius: 50%;
+		height: 45px;
+		border-radius: 5px;
+		color: #00db4199;
+		outline: none;
+		border: none;
+		background-color: rgba(45,45,45,0.9);
 	}
 	
 	.copyright{
@@ -162,15 +169,17 @@
 		color: #000;
 
 	}
+	/*.search{
+		display: inline-flex;
+	}*/
 	.buscador{
 		background-color: rgba(40,40,40,0.9);
 		width: 50px;
 		color: #ffff;
 		padding: 5px;
 		padding-left: 15px;
-		position: absolute;
 		height: 35px;
-		border-radius: 30px;
+		border-radius: 5px;
 		border:none;
 		transition-duration: 0.5s;
 		outline:none;
@@ -237,7 +246,7 @@
 		position: relative;
 		margin: 20px;
 		display: block;
-		background-color: rgb(255, 250, 250);
+		
 		border-radius: 10px;
 		box-shadow: 10px 10px 16px;
 		transition-duration: 0.2s;
@@ -249,9 +258,9 @@
 
 	img{
 		position: relative;
-		width: 90%;
+		width: 100%;
 		border-radius: 5px;
-		height: 70%;
+		height: 100%;
 		object-fit: cover;
 		z-index: 200;
 		justify-content: center;
@@ -263,13 +272,13 @@
 		margin-top: 10px;
 		display: flex;
 		display: block;
-		top: 10px;
+		top: 0px;
 	}
 
 	.text{
 
 		position: absolute;
-		background-color: rgba(238, 234, 234, 0.91);
+		
 		width: 0px;
 		height: 220px;
 		border-radius: 10px;
@@ -290,14 +299,23 @@
 		visibility: hidden;
 	}
 	.texto_1{
-		display: block;
 		position: relative;
 		width: 100%;
-		height: 25%;
-		font-size: 25px;
-		margin-left: 15px;
-
+		left: 20px;
+		top: -20px;
+		/* height: 25%; */
+		z-index: 233;
+		padding: 5px;
+		margin-top: -30px;
+		font-family: 'fuente3';
+		color: darkgray;
+		font-size: 20px;
+		text-align: initial;
 	}
+		
+	
+
+	
 	h2{
 		color: rgb(77, 76, 76);
 		text-align: left;

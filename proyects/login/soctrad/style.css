@@ -1,0 +1,1219 @@
+@font-face{
+	font-family: Minecraft;
+	src:url(Minecraft.otf);
+}
+body{
+	font-family: Minecraft;
+	padding: 0;
+	margin: 0;
+
+}
+button{
+	outline: none;
+}
+._back{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background-size: cover;
+	background-image: url(backgrounds/10.jpg);
+	background-position: center;
+}
+/*.back>img{
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	object-fit:contain;
+	z-index: -4;
+}*/
+/*span{
+	padding: 10px;
+	}*/
+	section{
+		display: flex;
+
+	}
+	
+	nav{
+		display: flex;
+	}
+	p{
+		margin: 0;
+		padding: 0;
+		margin-block-start: 0em;
+		margin-block-end: 0em;
+
+	}
+	li>a{
+		font-size: 10px;
+	}
+
+	ul{
+
+		color: rgb(50,120,50);
+		letter-spacing: 3px;
+		overflow: hidden;
+		display: block;
+		list-style-type: disc;
+		margin-block-start: 0em;
+		margin-block-end: 0em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		margin: 10px auto;
+		padding-inline-start: 10px;
+	}
+
+	a{
+		color: #699;
+		vertical-align: sub;
+		font-size: 10px;
+		text-decoration: none;
+
+	}
+	li{
+		color: #bbb;
+		list-style: hangul;
+		border-bottom: 2px ridge rgb(94 60 206 / 68%);
+		width: 90%;
+		padding: 7px;
+
+	}
+	li>b{
+		color: rgba(2, 160, 10, 1.0);
+	}
+	span>p{
+		margin:  auto;
+		text-transform: uppercase;
+	}
+	.loading{
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: fixed;
+		z-index: 50;
+		background-color: #000;
+		margin: auto;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.loading2{
+		display: none;
+	}
+	.loading_img{
+		position: relative;
+		top: 200px;
+
+		margin: auto;
+	}
+	.animation{
+		animation-name: sube;
+		animation-duration: 120s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+	@keyframes sube{
+		0%{margin-top: -3800px;}
+		50%{margin-top: 0px;}
+		100%{margin-top: -3800px;}
+
+	}
+	.animation2{
+		animation-name: sube2;
+		animation-duration: 23s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+	@keyframes sube2{
+		0%{margin-top: 470px}
+		100%{margin-top: 0px;}
+		100%{margin-top: 470px;}
+
+	}
+
+	.ul_1{
+		position: absolute;
+		transform: scale(0.8);
+		max-height: 250px; 
+		overflow-y: scroll;
+		display: inline-block;
+		margin: -10px 0px 0px 0px;
+		float: right;
+		right: -80px;
+		bottom: 10px;
+		width: 500px;
+
+	}
+	.ul_1::-webkit-scrollbar{
+		color: transparent;
+		background-color: transparent;
+	}
+	.li_1{
+		display: flex;
+		width: 89%;
+	}
+	.p_p1{
+		float: right;
+		width: 100%;
+		text-align: right;
+	}
+	.Date{
+		color: #493;
+		width: 50%;
+		float: right;
+
+		font-size: 13px;
+	}
+	.Date>p{
+		float: right;
+		margin-right: 10px;
+	}
+	.nav{
+		top: 0;
+		position: relative;
+		width:100%;
+		height: 70px;
+
+	}
+	.nav>p{
+		color: #f6f7f1e6; 
+		font-size: 30px;
+		margin-left: 40px;
+		margin-top: 30px;
+	}
+	.section_1{
+		width: 19%;
+	}
+	.table{
+		width: fit-content;
+		max-height:370px;
+		max-width: 290px;	
+		border: 2px solid;
+		overflow-y:scroll  ;
+		overflow-x: hidden;
+		font-family: 19px;
+		border-style: dotted;
+		border-color: rgb(66 247 249 / 80%);
+		margin-left: 0px;
+		margin-top: -10px;
+		flex-wrap: wrap;
+		transform: scale(0.9);
+		min-height: 300px;
+
+	}
+	.table::-webkit-scrollbar{
+		background-color: transparent;
+	}
+	/*identidad random*/
+	.ident{
+		width: 270px;
+		height: 60px;
+		position: absolute;
+		margin: 10px;
+		border-style: ridge ;
+		border: ridge rgba(255, 50, 70, 0.7) 1.5px;
+		display: flex;
+	}
+	.ident_div1{
+		width: 30%;
+		height: 99%;
+	}
+	.ident_div1>img{
+		width: 100%;
+		height:100%;
+		object-fit: cover;
+		filter:invert(50%);
+	}
+	.ident_div2{
+		width: 60%;
+		height: 99%;
+	}
+	.ident_div2>button{
+		width: 150px;
+		justify-content: center;
+		text-align: center;
+		align-self: center;
+		align-items: center;
+		margin: 15px auto;
+		height: 30px;
+		border: none;
+		color: #bbb;
+		background-color: rgba(250, 10, 40, 0.5);
+	}
+	.ident_div2>button:hover{
+		background-color: rgba(10, 100, 120, 1.0);
+	}
+	.ident_div2>button:active{
+		background-color: rgba(100, 10, 10, 0.7);
+		padding: 5px;
+	}
+
+	/*overflo*/
+
+	#t{
+		position: fixed;
+
+		display: none;
+	}
+	.back{
+		top: 0px;
+		z-index: 9;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(20, 20, 20, 0.6);
+	}
+
+	.overflow{
+		position: fixed;
+		top: 100px;
+		left: 300px;
+		width: 900px;
+		background: rgba(7,7,7,0.9);
+		border: solid #bbb 1.5px;
+		height: 600px;
+		z-index: 13;
+		display: contents;
+
+	}
+	.overflow>nav{
+		font-size: 20px;
+		color: yellow;
+		margin-left: 30px;
+		margin-top: 10px;
+		position: absolute;
+	}
+
+	.overflow_div1{
+		width: 96%;
+		height: 100%;
+		color: #fff;
+		margin: auto;
+		z-index: 10;
+		display: flex;
+	}
+	#div_img1{}
+	.div_img2{
+		background-image: url("https://thispersondoesnotexist.com/image");
+		background-size: cover;
+		justify-content: right;
+		text-align: right;
+		border: 1px solid #149414;
+		padding: 4px;
+		width: 250px;
+		position: relative;
+		margin: auto;
+		filter: grayscale(1);
+		object-fit: cover;
+		height: 250px;
+
+	}
+	.overflow_div2{
+		width: 8%;
+		margin: auto;
+		height: 300px;
+		position: relative;
+	}
+
+
+	.ul_overflow {
+		color: #149414;
+		letter-spacing: 3px;
+		overflow: visible;
+		display: inline-table;
+		list-style-type: disc;
+		margin: auto ;
+	}
+	/*stronge para cerrar overflow*/
+
+	#close{
+		position: absolute;
+		width: 50px;
+		float: left;
+		right: 0px;
+		height: 50px;
+		padding: 14px;
+
+	}
+
+
+	.btn_3{
+		border: none;
+		position: relative;
+		margin: 0px 10px;
+		width: 50px;
+		background-color: rgba(150, 20, 20, 0.9);
+		color: #bbb;
+		height: 20px;
+	}
+
+	.btn_3:active{  
+		background-color: rgb(100, 101, 110);
+	}
+	.btn_3:hover{
+		background-color: #144;
+	}
+
+	/*root*/
+	.acess{
+		z-index: 20;
+		width: 100%;
+		display: none;
+		height: 100%;
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.8);
+		margin: auto;
+		top: 0px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+	.acess_div{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		border: 1px solid #156aea;
+		max-width: 450px;
+		width: 100%;
+		background: #2141881c;
+		transform: translate(-50%, -50%);
+		box-shadow: 10px 10px 15px rgb(0 0 0 / 6%);
+
+	}
+	/*colores rgba rojo verde y azul*/
+
+	.acess_nav{					
+		background-color: #09e6d852;
+		font-size: 23px;
+		font-weight: 500;
+		height: 25px;
+		border-bottom: 1px solid #ccc;
+	}
+	.acess_nav:hover{
+		cursor: move;
+	}
+	.acess_nav:active{
+		cursor: move;
+		user-select: none;
+	}
+	::selection {
+		color: #fff;
+		background: transparent;
+	}
+	.acess_form{
+		width: 100%;
+		height: 80%;
+		text-align: center;
+	}
+	.acess_form>input{
+		text-align: center;
+		display: block;
+		width: 70%;
+		height: 25px;
+		margin: 40px auto;
+		background-color: transparent;
+		color: lightgreen;
+		outline: none;
+		border: none;
+		border-bottom: 3px solid #149414;
+	}
+	.acess_form>label{
+		display: block;
+		width: 100%;
+		height: 35px;
+		opacity: 50%;
+	}
+	.send{
+		background-color: rgba(60, 60, 60, 0.5);
+		width: 200px;
+		height: 40px;
+		outline: none;
+		border: none;
+		color: white;
+		font-size: 20px;
+		font-family: Minecraft;
+
+	}
+	.send:hover{
+		background-color:rgba(190, 190, 190, 0.7) ;
+		color: black;
+	}
+
+	/*negar gif*/
+	.negar{
+		display: none;
+		z-index: 55;
+		top: 0px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		position: fixed;
+		background-color:#000 ;
+	}
+	.negar_2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    top: 0;
+    width: 80%;
+    z-index: 27;
+    display: flex;
+    height: 100%;
+}
+		
+	
+	.negar_3{
+		    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 800px;
+    height: 300px;
+    margin-top: 65px;
+    height: 73%;
+    background-color: rgb(148 20 7 / 40%);
+    border: 20px solid rgb(150 20 20 / 90%);
+    border-radius: 30px;
+	}
+	.negar_3>p{
+		    margin: 50px auto;
+    color: #de0000;
+    font-family: Minecraft;
+    font-size: 76px;
+    text-shadow: 2px 1px 0px #000;
+    animation: zoom 5s infinite;
+    animation-duration: 1s;
+    width: 60%;
+}
+	
+	.negar_3>img{
+		animation: zoom 5s infinite;
+		animation-duration: 1s;
+		margin: auto;
+		width: 25%;
+		height: 180px;
+		filter: drop-shadow(2px 4px 6px yellow);
+		margin-top: 10px;
+	}
+	@keyframes zoom{
+		0%{transform: scale(0.9);}
+		50%{transform: scale(1.1);}
+		100%{transform: scale(0.9);}
+	}
+	.tra{
+		display: block;
+
+	}
+
+	/*section camera*/
+
+
+
+	#camera{
+		width: 70%;
+		display: block;
+	}
+	.btn{color: #fff;
+		background-color: #000;
+
+	}
+
+	.Search{
+		width: 100%;
+		height: 50px;
+		z-index: 1;
+	}
+	.Search>input{
+		width: 80%;
+		height: 40px;
+		padding: 7px;
+		text-indent: 15px;
+		margin: auto 10px;
+		background-color: transparent;
+		color: yellow;
+		outline: none;
+	}
+	.title2{
+		width: 100%;
+		font-size: 16px;
+		text-align: center;
+		color: #ccc;
+		text-transform: uppercase;
+
+		word-spacing: 4px;
+		margin: 10px auto;
+
+	}
+	.btn_ta{
+		background-color: #1132;
+		border: 1px solid #fff;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 10px;
+		cursor: pointer;
+		font-size: 13px;
+		font-family: Minecraft;
+		color: #ccc;
+	}
+	.btn_ta:hover{
+		background-color: #222;
+		color: #171;
+	}
+	.title{
+		font-size: 23px;
+		font-family: Minecraft;
+		word-spacing: 4px;
+		margin: 10px auto;
+		width: 100%;
+		height: 30px;
+		color: blueviolet;
+		text-align: center;
+	}
+	.cameras{
+		position: fixed;
+		top: 0px;
+		display: none;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		z-index: 15;
+	}
+	.container_cameras{
+		background-color:rgb(11 23 62 / 26%);
+		border: solid 1px #369;
+		width: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		margin: auto;
+		height: 100%;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		z-index: 16;
+		position: relative;
+	}
+	.order{
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+width: 95%;
+    height: fit-content;
+		display:flex;
+		flex-wrap: wrap;
+		overflow-y: auto;
+	}
+
+
+	.cameras_img{
+		display: none;
+		background: none;
+	}
+	.cameras_img_2{
+		display: none;
+		background: none;
+	}
+
+	.back1{
+		background-image: url(http://webcam3.vilhelmina.se/mjpg/video.mjpg);
+		background-size: cover;
+	}
+	.back2{
+		background-image: url(http://193.45.228.92/mjpg/video.mjpg);
+		background-size: cover;
+	}
+	.back3{
+		background-image: url(http://85.13.14.79/cgi-bin/faststream.jpg?stream=full&fps=0);
+		background-size: cover;
+	}
+	.back4{
+		background-image: url(https://webcamsdemexico.net/tacambaro1/live.jpg?d=1631038353126);
+		background-size: cover;
+	}
+	.back5{
+
+		background-image: url(http://178.71.63.20:8888/mjpg/video.mjpg);
+		background-size: cover;
+	}
+	.back6{
+		background-image: url(http://60.45.181.202:8080/mjpg/video.mjpg);
+		background-size: cover;
+	}
+	.back7{
+		background-image: url(http://60.45.181.202:8080/mjpg/3/video.mjpg?timestamp=1631860059788);
+		background-size: cover;
+	}
+	.back8{
+		background-image: url(http://213.193.89.202/mjpg/video.mjpg);
+		background-size: cover;
+	}
+	.back9{
+		background-image: url(http://182.23.220.250:5000/mjpg/video.mjpg);
+		background-size: cover;
+	}
+	.back10{
+		background-image: url("http://91.192.168.58:8080/mjpg/video.mjpg");
+		background-size: cover;
+	}
+	.back10{
+		background-image: url(http://81.47.179.157:8081/mjpg/video.mjpg);
+		background-size: cover;
+	}
+	.back11{
+		background-image: url(http://46.0.118.220:8888/cam_1.cgi);
+		background-size: cover;
+	}
+
+	.back12{
+		background-image: url(http://185.195.240.221/webcapture.jpg?command=snap&channel=1?COUNTER);
+		background-size: cover;
+	}
+	.back13{
+		background-image: url(http://195.211.216.174/mjpg/video.mjpg);
+		background-size: cover;
+	}
+	.back14{
+		background-image: url(http://46.42.2.153:8081/mjpg/video.mjpg);
+		background-size: cover;
+	}
+	.back15{
+		background-image: url(http://109.233.205.181:8081/mjpg/video.mjpg);
+		background-size: cover;
+	}
+	.back16{
+		background-image: url(http://37.192.22.23:60001/cgi-bin/snapshot.cgi?chn=0&u=admin&p=&q=0&COUNTER);
+		background-size: cover;
+	}
+	.back17{
+		background-image: url(http://37.1.80.207:82/webcapture.jpg?command=snap&channel=1?COUNTER);
+		background-size: cover;
+	}
+	.back18{
+		background-image: url(http://62.122.101.146:60001/cgi-bin/snapshot.cgi?chn=0&u=admin&p=&q=0&COUNTER);
+		background-size: cover;
+	}
+	.back19{
+		background-image: url(http://85.198.115.120/webcapture.jpg?command=snap&channel=1?COUNTER);
+		background-size: cover;
+	}
+	.back20{
+		background-image: url(http://37.192.133.112:8081/webcapture.jpg?command=snap&channel=1?COUNTER);
+		background-size: cover;
+	}
+	.back21{
+		background-image: url(http://178.176.247.106:81/webcapture.jpg?command=snap&channel=1?COUNTER);
+		background-size: cover;
+	}
+	.back22{
+		background-image: url(http://95.154.135.189:88/webcapture.jpg?command=snap&channel=1?COUNTER);
+		background-size: cover;
+	}		
+	.back23{
+		background-image: url(http://89.222.134.169:83/GetData.cgi?CH=1);
+		background-size: cover;
+	}		
+	.back24{
+		background-image: url(http://109.115.124.92:81/GetData.cgi?CH=2);
+		background-size: cover;
+	}		
+	.back25{
+		background-image: url();
+		background-size: cover;
+	}		
+	.back26{
+		background-image: url();
+		background-size: cover;
+	}		
+	.back27{
+		background-image: url();
+		background-size: cover;
+	}		
+	.back28{
+		background-image: url();
+		background-size: cover;
+	}		
+	.back29{
+		background-image: url();
+		background-size: cover;
+	}
+	.back_1{
+		background-image: url(https://monitor.protezionecivile.fvg.it/api/images/136475);
+		background-size: cover;
+	}
+	.back_2{
+		background-image: url(https://monitor.protezionecivile.fvg.it/api/images/136473);
+		background-size: cover;
+	}
+
+	.flex{
+		position: relative;
+		border: 1px solid green;
+		margin: auto;
+		padding: 5px;
+		width: 170px;
+		display: inline-flex;
+		height: 120px;
+		object-fit: cover
+	}
+	
+	.flex:active{
+		position: absolute;
+		margin: auto;
+		top: 50%;
+		transform: scale(3.6);
+		margin: auto 10px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		z-index: 20;
+	}
+	.flex_2{
+		position:relative;
+		border: 1px solid #274;
+		margin: auto;
+		width:500px;
+		height: 180px;
+		display: inline-flex;
+		object-fit: cover;
+	}
+	.flex_2:active{
+		position: absolute;
+		margin: auto;
+		top: 40%;
+		transform: scale(2.6);
+		margin: auto 10px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		z-index: 20;
+	}
+	
+	@keyframes img2{
+		0%{z-index: 6;}
+		100%{z-index: 3;}
+	}
+	@keyframes img3{
+		0%{z-index: 7;}
+		100%{z-index: 2;}
+	}
+	@keyframes img4{
+		0%{z-index: 8;}
+		100%{z-index: 1;}
+	}
+	#img_1{
+		animation: img1;
+		animation-duration: 9s;
+		animation-delay: 6s;
+		animation-iteration-count: infinite;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		z-index: 5;
+	}
+
+
+	#img_2{
+		animation: img2;
+		width: 100%;
+		animation-delay: 5s;
+		animation-duration: 10s;
+		height: 100%;
+		object-fit: cover;
+		z-index: 4;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		position: absolute;
+
+	}
+
+	#img_3{
+		animation-timing-function: linear;
+		animation: img3;
+		width: 100%;
+		object-fit: cover;
+		animation-iteration-count: infinite;
+		animation-delay: 14s;
+		animation-duration: 8s;
+		height: 100%;
+		position: absolute;
+		z-index: 3;
+	}
+
+
+
+
+	.modal_1{
+		font-family: monospace;
+		position: fixed;
+		border: none;
+		display:none;
+		width: 100%;
+		height: 100%;
+		background: rgb(10,12,15,0.7);
+		z-index: 10;
+		justify-content: center;
+		top: 0px;
+
+	}
+	.container_modal{
+		position: relative;
+		border: 2px solid #1798a24d;
+		margin: auto;
+		margin-top: 80px;
+		width: 900px;
+		height: 600px;
+		background-color: rgba(10, 10, 20, 0.9);
+
+		overflow-y: auto;
+	}
+	.container_modal::-webkit-scrollbar{
+		background-color: transparent;
+	}
+
+	.container_modal>li{
+		list-style: decimal;
+		color: green;
+
+	}
+	.container_modal>li>a{
+		font-size: 15px;
+	}
+	.btn{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		padding: 0px;
+		font-family: Minecraft;
+		outline: none;
+		border: none;
+		margin: 0px;
+		width: 40px;
+		height: 25px;
+		background-color: rgba(150, 20, 20, 0.9);
+		color: #bbb;
+
+	}
+	.btn:hover{
+		background-color: rgb(100, 101, 110);
+	}
+	.btn:active{  
+		background-color: #144;
+	}
+	.section_divs{
+		position: relative;
+		color: #fff;
+		width: 100%;
+		flex-wrap: wrap;
+
+	}
+	.div_img{
+		cursor: pointer;
+		margin: 10px 40px;
+		border: none;
+	}
+	.btn_invisible{
+		background-color: transparent;
+		outline: none;
+		position: relative;
+		cursor: pointer;
+		border: 1px solid transparent;
+	}
+	.div_img:hover .btn_invisible{
+		border: dashed 1px #373;
+	}
+	.img_btn{
+		width: 30px;
+		z-index: 2;
+		position: absolute;
+		margin: auto;
+		left: 20px;
+		top: 13px;
+	}
+
+
+	.file{
+		width: 60px;
+		background-color: white;
+		height: 40px;
+		margin: 10px auto;
+		position: relative;
+	}
+	.sub_file{
+		background-color: #ccc;
+		position: absolute;
+		width: 50%;
+		height: 10px;
+		margin-top: -6px;
+		z-index: -2;
+		border-radius: 0px 5px 0px 0px;
+	}
+
+
+	/*section camera*/
+	.section_camera{
+		position: absolute;
+		top: 20%;
+		left: 80%;
+		max-width: 380px;
+		width: 100%;
+		background: #000;
+
+		transform: translate(-20%, -50%);
+		box-shadow: 10px 10px 15px rgba(0,0,0,0.06);
+
+	}
+	.inf{
+		cursor: move;
+		width: 380px;
+		height: 270px;
+		background-color: rgba(0,0,0,0.4);
+		justify-content: center;
+		border: 2px solid #2579c1;
+		overflow: hidden;
+	}
+	.inf_img{
+		width: 100%;
+		height: 100%;
+	}
+
+	/*section two*/
+
+
+
+	.section_two{
+		width: fit-content;
+		display: block;
+
+	}
+
+
+	@keyframes chat {
+		from {
+			justify-content: center;
+			text-align: left;
+			width: 200%;
+		}
+
+		to {
+
+			justify-content: center;
+			text-align: left;
+			width: 90%;
+
+
+		}
+	}
+	#cal{
+		position: relative;
+		width: fit-content;
+		border: 1px solid transparent;
+		margin: 10px auto;
+		padding: 5px;
+		height: 35px;
+		background-color: rgba(50, 50, 50, 0.3);
+		overflow: hidden;
+		outline: none;
+		color: #5890a0;
+	}
+	#cal:active{
+		border: solid 2px darkgreen;
+		background-color: transparent;
+	}
+
+	.chat>p{
+		padding: 5px;
+		color:#157;
+		animation-duration: 4s;
+
+		animation-name: chat;
+		animation-delay: 7s;
+		animation-direction: ease-in;
+
+	}
+	.ip{
+		display: flex;
+		width: 300px;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.aligh{
+		width: 200px;
+		height: 50px; 
+		margin: auto;
+		background-color: rgba(20, 20, 20, 0.7);
+
+    border-radius: 20px;
+    overflow: hidden;
+		text-align: center; 
+		justify-content: center;
+		border: 3px dotted #151;
+		display: block;
+		    margin-left: 15px;
+
+	}
+	.text_ip{
+		background-color: #272;
+		width: 100%;
+		height: 20px;
+		font-family: sans-serif;
+	}
+	strong{
+		font-size: 20px;
+		justify-content: center;
+		align-items: center;
+		padding: 2px;
+		text-align: center;
+		letter-spacing: 3px;
+		font-family: Minecraft;
+	}
+
+	#ipId{
+		color: #27af7d;
+		max-height: 50px;
+		margin: 10px auto;
+	}
+
+
+
+	#cronometro { padding:10px; 
+		width: 200px;
+		text-align: center; 
+		background-color: transparent;
+		border-radius: 5px;
+
+
+	}
+
+	#number { 
+		padding: 5px 10px; 
+		width:460px;
+		float: right;
+		font: normal 2em Minecraft;
+		color: #190;
+		text-align: end; 
+		margin: 14px;
+		float: right;
+		font-size: 20px;
+		border-radius: 3px; 
+	}
+
+	.name_detec{
+		font-size: 13px;
+		font-family: monospace;
+		color: #fff;
+	}
+
+	/*secret*/
+
+
+	@keyframes secret{
+		0%{background-color: ;}
+		50%{}
+		100%{}
+	}
+	.sec{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		visibility:hidden;
+		z-index: 40;
+		background-color: #000;
+		top: 0px;
+		margin: auto;
+		justify-content: center;
+
+
+	}
+	.sec2{
+		visibility: visible;
+	}
+	.holograms{
+		position: absolute;
+		left: 10px;
+		width: 150px;
+		height: 250px;
+		border: solid 0.8px darkgreen;
+	}
+	.holograms>img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.content{
+		margin: auto 10px;
+		width: 500px;
+		height: 500px;
+		background-color: #111;
+		border: 0.6px solid #491;
+		overflow: hidden;
+		color: #382;
+		font-family: Minecraft;
+	}
+
+	.content>nav{
+		position: relative;
+		width: 100%;
+		height: 35px;
+		background-color: #fff;
+
+	}
+	.meca{
+		padding: 5px;
+		overflow: hidden;
+		font-family: Helvetica, sans-serif;
+		white-space: nowrap;
+		font-size: 15px;
+
+		color: #493;
+		width: 100%;
+		height: 100%;
+		line-height: 30px;
+		/* border: crimson; */
+		border-right: 2px rgb(218 226 220 / 87%);
+		animation: animacionIntro 20.4s steps(53, end);
+		animation-delay: 0s;
+	}
+	@keyframes animacionIntro {
+		0% {
+			width: 0%;
+
+		}
+		100% {
+
+			width: 100%;
+
+
+		}
+	}
+/*section climate*/
+#clound{
+
+}
+.clound{
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+}
+.div_clound{
+	position: absolute;
+		width: 200px;
+		margin: auto;
+		top: 64%;
+		left: 2%;
+	height: 140px;
+}
+.div_clound>img{
+	width: 100%;
+	height: 100%;
+}
+.clound_back{
+	background-image: url(https://www.apolo11.com/imagens/2021/plataforma_a74_girando_780px_20210827-075715.gif);
+}
