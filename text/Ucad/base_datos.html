@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC >
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>Tardy |ISC847 Desarrollo de Emprendedores </title>
+  <title>Sistemas de administración de Base de datos</title>
   <!-- <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" /> -->
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
@@ -12,7 +12,7 @@
     <div id="header">
       <div id="logo" class="grid_6">
         <p class="title"><a href="..\ucad.html">Ucad</a></p>
-        <span class="description">ISC847 Desarrollo de Emprendedores </span> </div>
+        <span class="description">Sistemas de administración de Base de sdatos </span> </div>
         <div id="menu" class="grid_6">
           <ul>
             <li><a href="..\ucad.html">Home</a> </li>
@@ -26,13 +26,13 @@
         <h1></p> 
         </h1>
         <div class="recent-posts">
-          <h2>Emprendedor</h2>
-          <code>
-
-            Un emprendedor es una persona que tiene la capacidad de descubrir e identificar algún
-            tipo de oportunidad de negocio. Emprender es un vocablo que denota un perfil, un conjunto
-            de características que hacen actuar a una persona de una manera determinada y le permiten
-            mostrar ciertas competencias para visualizar, definir y alcanzar objetivos (Catarina UDLAP)
+          <h2>Funciones de un DBMS</h2>
+          <code> A lo largo del tiempo, conforme la cantidad de datos para almacenar y leer aumentó, el guardar
+            la información en archivos planos dejo de ser algo práctico ya que estos debían ser recorridos
+            de manera secuencial, lo cual en un gran volumen de datos genera lentitud y es no es funcional.
+            De dichas áreas de oportunidad surgen las Bases de datos y con ellas nace la necesidad de
+            ejecutar diversas tareas en ellas, para poder administrar y manipular la información que
+            contienen
           </code>
         </div>
 
@@ -41,33 +41,46 @@
 
 
 
-          <p><br> El riesgo es un elemento que se considera una gran característica fundamental para poder
-            emprender, en esta se pondera los beneficios y se asumen los peligros que son inherentes
-            a su consecución. En el perfil del emprendedor, se agrega la aceptación del riesgo:
-            capacidad para aprender de los errores o fracasos. El emprendedor es una persona
-            capaz de levantarse de sus caídas, con una nueva perspectiva de las cosas y un aprendizaje
-            que le permitirá mejorar su desempeño (con perseverancia para el logro de sus metas y
-          objetivos)</p><br>
-          <h2>Perfil del Emprendedor</h2>
-          <p>En los negocios existen los siguientes perfiles de emprendedor (Emprendedor Inteligente,
-          2020).</p><br>
+          <p><br> Aunque gran parte de las tareas dentro de una base de datos se pueden realizar a través de
+            comandos, siempre será más cómodo hacerlas a través de una interfaz gráfica, dicha interfaz
+            recibe el nombre de Database Managment System (DBMS) y consiste en una colección de
+            programas con los cuales pueden interactuar tanto personas como otros programas,
+            permitiéndoles acceder a la información almacenada en los archivos de base de datos así como
+          realizar tareas administrativas en la base de datos y los diversos objetos que esta contiene.</p><br>
+          
+          <p>Quizás te preguntes, ¿cómo que almacenar en archivos de la base de datos? si en el primer
+            párrafo se mencionó que eso se dejo de hacerse por ser lento; bueno, pues estos archivos a
+            diferencia de los archivos planos que se manejaban en un inicio están encriptados y son
+            gestionados por el DBMS, y aquí es donde surge la magia, pues es dicha aplicación quien se
+            preocupa de ordenar, almacenar y realizar todas las tareas sobre dichos archivos es el DBMS
+            quien lo realiza de una manera práctica y eficiente; a diferencia de los que se usaban en un inicio
+          donde el programador debía ocuparse de cosas tan triviales como la ubicación de estos</p><br>
           <ul>
-            <li>Emprendedor Administrativo: Hace uso de la investigación y del desarrollo para
-            generar nuevas y mejores formas de hacer las cosas.</li>
-            <li>Emprendedor Oportunista: Busca constantemente las oportunidades y se
-            mantiene alerta antes las posibilidades que le rodean</li>
-            <li>Emprendedor Adquisitivo: Se mantiene en continua innovación, la cual le permite
-            creer y mejorar lo que hace.</li>
-            <li>Emprendedor Incubador: En el afán por crecer y buscar nuevas oportunidades y
-              por preferir la autonomía, crea oportunidades independientes que al final se
-            convierten en negocios nuevos, incluso a partir de alguno ya existente.</li>
-            <li>Emprendedor Imitador: Genera sus procesos de innovación a partir de elementos
-            básicos ya existentes, mediante a mejora de ellos</li><br>
-            <p>El emprendedor es una persona que posee necesidades psicológicas básicas, las cuales,
-              como en todo ser humano, son tres: necesidad de logro, necesidad de afiliación y necesidad
-              de poder, pero en él la primera es la más importante, la que determina sus actitudes y
-              actuaciones. Sin embargo, también por la necesidad de independencia y autonomía,
-            necesidad de dominio de su medio y necesidad de crear.</p>
+            <h3>Las características que definen a un SGBD, [Celma et al., 2003] son las siguientes:</h3>
+            <li>Integración de toda la información de la organización.- La base de datos se crea para dar
+              servicio a toda o a una parte importante de la organización y no para unos usuarios particulares;
+              de esta forma se evita la redundancia de datos dentro del sistema de información y los problemas
+            de inconsistencia derivados de ella.</li>
+            <li>Persistencia de los datos.- Los datos deben estar disponibles en todo momento, lo que significa
+            que la base de datos debe almacenarse en un dispositivo de memoria secundaria</li>
+            <li>Independencia de los programas respecto a la representación física de los datos.- Las
+              aplicaciones que se desarrollen para manipular los datos deben ser independientes de la
+              implementación elegida para las estructuras de la base de datos. A esta característica se le
+            conoce como independencia de datos</li>
+            <li>Accesibilidad simultánea para distintos usuarios.- Debido al carácter integrador que tiene la
+              base de datos, ésta tendrá que ser compartida por distintos grupos de usuarios, lo que significa
+            que estos podrán acceder simultáneamente a los datos</li>
+            <li>Mecanismos para controlar la integridad y la seguridad de los datos.- Para que la base de
+              datos refleje fielmente la realidad de la cual es una representación, el SGBD bebe asegurar en
+              todo momento la calidad de la información almacenada (integridad) evitando que ésta se
+              deteriore por un uso incorrecto (actualizaciones que no son válidas, accesos concurrentes no
+              controlados, etc.). Así mismo, debe asegurar que a la información almacenada sólo acceden las
+            personas autorizadas y en la forma autorizada (seguridad).</li><br>
+            
+            <p>En resumen: las técnicas de bases de datos se han desarrollado con el objetivo de integrar la
+              información del sistema para evitar redundancias, sin que por ello se pierdan las distintas
+              perspectivas que de ella tienen los usuarios. Además, los SGBD que se construyen para aplicar
+            estas técnicas deben asegurar la independencia, la integridad y la seguridad de los datos.</p>
 
 
           </ul>
@@ -136,7 +149,6 @@
           </div>
 
 
-
           <ul>
           </div>
           <div class="recent-posts">
@@ -149,16 +161,23 @@
         <!-- end of content -->
         <!-- sidebar -->
         <div id="sidebar" class="grid_3">
-         
+          <div class="sidebar-container">
+            <form method="get" id="searchform" action="#" >
+              <div>
+                <label class="screen-reader-text" for="s">Search for:</label>
+                <input type="text" value="" name="s" id="s" />
+                <input type="submit" id="searchsubmit" value="Search" />
+              </div>
+            </form>
+          </div>
 
           <div class="sidebar-container">
-            <h3>pdf</h3>
+            <h3>Mas info</h3>
             <ul>
-              <li><a target="_bank" href="https://drive.google.com/file/d/1EVeFmpWr8TsgbEU7TWKbpRAFSlfqo68Y/view?usp=drive_link">Bloque 1</a> </li>
-              <li><a target="_bank" href="https://drive.google.com/file/d/1jrcztgOBb88gN8c6i0BlMpaHD5wzrOzq/view?usp=drive_link"> Bloque 2</a> </li>
-              <li><a target="_bank" href="https://drive.google.com/file/d/18BU1lG-zRFoJCRYGDBi9pTCo-H3i7lxT/view?usp=drive_link">Bloque 3</a> </li>
-              <li><a target="_bank" href="https://drive.google.com/file/d/13joHCfxmzo1gpBHvbHTHVgsnNY5ac2eS/view?usp=drive_link">Bloque 4</a> </li>
-              <li><a target="_bank" href="https://drive.google.com/file/d/1n0_frOw7g0YDSMtWB1iFiNZ8A_kZv7s7/view?usp=drive_link">Bloque 5</a> </li>
+              <li>Tabla de la demanda</li>
+              <li>Bloque 3</li>
+              <li>Bloque 4</li>
+              <li>Bloque 5</li>
             </ul>
           </li>
 
